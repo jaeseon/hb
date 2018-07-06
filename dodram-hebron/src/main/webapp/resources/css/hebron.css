@@ -68,15 +68,19 @@
 .product-wrap ul li {
   display: inline-block;
   width: 25%;
-  padding: 15px 0;
   border: 1px solid #eee;
   box-sizing: border-box;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
 }
-.product-wrap ul li > img {
-  width: 90%;
+.product-wrap ul li a {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.product-wrap ul li img {
+  width: 92%;
+  padding: 15px;
   min-height: 200px;
 }
 .product-wrap ul li > div {

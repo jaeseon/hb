@@ -9,7 +9,7 @@
 </head>
 <body>
 	<tiles:insertAttribute name="header"/>
-	<%-- <tiles:insertAttribute name="contents"/> --%>
+	<tiles:insertAttribute name="contents"/>
 	<tiles:insertAttribute name="footer"/>
 </body>
 </html>

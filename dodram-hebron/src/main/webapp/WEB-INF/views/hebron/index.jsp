@@ -53,14 +53,10 @@
 					헤브론테크 <span>제품군</span>
 				</div>
 				<ul>
-					<a href="#"><li><img src="../src/images/09.png">
-						<div>에드워드 제품</div></li></a><!--
-             		--><a href="#"><li><img src="../src/images/10.png">
-						<div>피에스텍 제품</div></li></a><!--
-             		--><a href="#"><li><img src="../src/images/11.png">
-						<div>제타 제품</div></li></a><!--
-             		--><a href="#"><li><img src="../src/images/12.png">
-						<div>SK통신판넬</div></li></a>
+					<li><a href="#"><img src="/resources/src/images/09.png">에드워드 제품</a></li><!--
+					--><li><a href="#"><img src="/resources/src/images/10.png">피에스텍 제품</a></li><!--
+					--><li><a href="#"><img src="/resources/src/images/11.png">제타 제품</a></li><!--
+					--><li><a href="#"><img src="/resources/src/images/12.png">SK통신판넬</a></li>
 				</ul>
 			</div>
 		</div>
@@ -71,7 +67,7 @@
 			<div class="small-box-wrap">
 				<div class="small-box-container">
 					<div class="small-box-items">
-						<img src="../src/images/img-history.jpg">
+						<img src="/resources/src/images/img-history.jpg">
 						<div>
 							<p>
 								<strong>History</strong> 헤브론테크의 실적에 대해<br />소개합니다.
@@ -79,7 +75,7 @@
 						</div>
 					</div>
 					<div class="small-box-items">
-						<img src="../src/images/img-process.jpg">
+						<img src="/resources/src/images/img-process.jpg">
 						<div>
 							<p>
 								<strong>Process</strong> 다양한 실제 공정 과정에 대해서<br />소개합니다.
@@ -87,7 +83,7 @@
 						</div>
 					</div>
 					<div class="small-box-items">
-						<img src="../src/images/img-product.jpg">
+						<img src="/resources/src/images/img-product.jpg">
 						<div>
 							<p>
 								<strong>Product</strong> 직접 생산 및 납품되는 기계 제품을<br />소개합니다.

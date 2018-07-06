@@ -28,7 +28,7 @@
 	<!-- value에는 {1}/{2}/{3}가 있다. -->
 	<!-- 이것은 name 패턴이 catch해서 오는 content를 보여주는데, 이때 이 값이 '경로/파일명'이라고 했다. -->
 	<!-- 이 경로와 파일명이 {1}과 {2}에 들어가는 것이다. 숫자는 *의 순서에 맞게 적어준다. -->
-	<definition name="*/*" extends="Layout">
+	<definition name="/*/*" extends="Layout">
 		<put-attribute name="contents" value="/WEB-INF/views/{1}/{2}.jsp" />
 	</definition>
 	

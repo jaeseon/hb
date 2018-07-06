@@ -15,7 +15,7 @@
 	</div>
 	<div class="header-details-2-wrap">
 		<div class="header-details-2-container">
-			<a href="${ contextPath }"><img src="/resources/src/images/logo-hebron.JPG"></a>
+			<a href="${ contextPath }"><img src="/resources/src/images/logo-hebron.jpg"></a>
 			<div class="header-menu">
 				<ul>
 					<li><a href="#">HOME</a></li>
