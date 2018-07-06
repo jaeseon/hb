@@ -15,13 +15,6 @@
 	<definition name="Layout" template="/WEB-INF/tiles/layout/layout.jsp">
 		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
 		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
-		<put-attribute name="nav" value="/WEB-INF/tiles/tile/nav.jsp" />
-	</definition>
-	
-	<definition name="CustomerLayout" template="/WEB-INF/tiles/layout/customerLayout.jsp">
-		<put-attribute name="cusMeta" value="/WEB-INF/tiles/tile/customerMeta.jsp" />
-		<put-attribute name="cusHeader" value="/WEB-INF/tiles/tile/customerHeader.jsp" />
-		<put-attribute name="cusNav" value="/WEB-INF/tiles/tile/customerNav.jsp" />
 	</definition>
 	
 	<!-- */*는 controller에서 return을 '경로/파일명' 이런식으로 넘겨주는데, 그에 대한 패턴을 적어놓은 것이다. -->
