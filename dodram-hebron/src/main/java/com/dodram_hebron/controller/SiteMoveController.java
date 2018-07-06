@@ -15,12 +15,12 @@ public class SiteMoveController {
 		return "index";
 	}
 	
-	@RequestMapping(value = "/dodram", method = RequestMethod.GET)
+	@RequestMapping(value = "/dodram")
 	public String dodram_home(Locale locale, Model model) throws Exception {
 		return "/dodram/index";
 	}
 	
-	@RequestMapping(value = "/hebron", method = RequestMethod.GET)
+	@RequestMapping(value = "/hebron")
 	public String hebron_home(Locale locale, Model model) throws Exception {
 		return "/hebron/index";
 	}

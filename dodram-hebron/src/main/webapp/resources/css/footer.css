@@ -9,7 +9,8 @@
   margin: 0 auto;
   padding: 20px 0;
 }
-.footer-container > img {
+.footer-container img {
+  width: 170px;
   vertical-align: middle;
   margin-right: 26px;
 }

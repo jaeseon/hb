@@ -7,16 +7,16 @@
 <meta name="viewport" content="width=1170">
 
 <!-- CSS -->
-<link rel="stylesheet" href="/resources/src/css/common.css">
-<link rel="stylesheet" href="/resources/src/css/header.css">
-<link rel="stylesheet" href="/resources/src/css/footer.css">
-<link rel="stylesheet" href="/resources/src/css/hebron.css">
-<link rel="stylesheet" href="/resources/src/css/jquery.bxslider.css">
+<link rel="stylesheet" href="/resources/css/common.css">
+<link rel="stylesheet" href="/resources/css/header.css">
+<link rel="stylesheet" href="/resources/css/footer.css">
+<link rel="stylesheet" href="/resources/css/hebron.css">
+<link rel="stylesheet" href="/resources/css/jquery.bxslider.css">
 
 <!-- WEB-FONT -->
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:800|Raleway" rel="stylesheet">
 
 <!-- JS -->
-<script src="/resources/src/js/jquery_min_v311.js"></script>
-<script src="/resources/src/js/jquery.bxslider.js"></script>
-<script src="/resources/src/js/hebron.js"></script>
+<script src="/resources/js/jquery_min_v311.js"></script>
+<script src="/resources/js/jquery.bxslider.js"></script>
+<script src="/resources/js/hebron.js"></script>

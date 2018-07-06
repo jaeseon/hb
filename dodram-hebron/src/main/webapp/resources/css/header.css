@@ -65,8 +65,9 @@
   padding: 20px 0 15px;
   margin: 0 auto;
 }
-.header-details-2-container > img {
-  vertical-align: middle;
+.header-details-2-container img {
+	width: 170px;
+	vertical-align: middle;
 }
 .header-menu {
   position: absolute;
