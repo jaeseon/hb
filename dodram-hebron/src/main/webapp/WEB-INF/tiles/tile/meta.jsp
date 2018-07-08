@@ -9,6 +9,7 @@
 <!-- CSS -->
 <link rel="stylesheet" href="/resources/css/common.css">
 <link rel="stylesheet" href="/resources/css/header.css">
+<link rel="stylesheet" href="/resources/css/nav.css">
 <link rel="stylesheet" href="/resources/css/footer.css">
 <link rel="stylesheet" href="/resources/css/hebron.css">
 <link rel="stylesheet" href="/resources/css/jquery.bxslider.css">

@@ -4,32 +4,68 @@
 "http://tiles.apache.org/dtds/tiles-config_3_0.d">
 
 <tiles-definitions>
-	<!-- template는 만든 파일에 맞게 작성하고, -->
-	<!-- name은 tiles-definitions에서 사용할 이름을 정의한다. -->
-	<!-- template나 value에 따라서 사용하는 부분이 달라진다. -->
-	<!-- template는 레이아웃의 틀이되는 파일을 적는다. -->
-	<!-- put-attribute는 해당 템플릿에서는 이런 이름으로 이런 파일을 가져다 쓰겠다는 의미이다. -->
-	<!-- 필요한 만큼 정의하면 된다. -->
-	<!-- 템플릿에 정의되어 있는 put-attribute를 작성하면 해당 템플릿의 레이아웃에서는 고정적으로 보여지게 된다. -->
-	<!-- 변화가 없이 모든 페이지에 들어가는 헤더 또는 푸터를 이런식으로 많이 설정한다. -->
 	<definition name="Layout" template="/WEB-INF/tiles/layout/layout.jsp">
 		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
 		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
 	</definition>
 	
-	<!-- */*는 controller에서 return을 '경로/파일명' 이런식으로 넘겨주는데, 그에 대한 패턴을 적어놓은 것이다. -->
-	<!-- 패턴이 name과 일치할 경우 해당 definition이 catch하여 그에 맞는 content를 보여주는 것이다. -->
-	<!-- extends은 해당 definition에서는 레이아웃을 설정하지 않고, 이미 설정되어있는 레이아웃을 한다는 의미이다. -->
-	<!-- name과 extends를 합쳐서 definition을 설명하자면, -->
-	<!-- 'name에 해당하는 패턴으로 controller에서 리턴해주면 extends의 값과 일치 하는 레이아웃에 content를 보여주겠다'가 된다. -->
-	<!-- 위 레이아웃에는 meta, header, nav가 설정돼있는데 그 레이아웃에 맞는 meta, header, nav가 '같이' 나오는 것이다. -->
-	<!-- content는 해당 파일의 내용에 따라 계속 바뀐다. -->
-	<!-- value에는 {1}/{2}/{3}가 있다. -->
-	<!-- 이것은 name 패턴이 catch해서 오는 content를 보여주는데, 이때 이 값이 '경로/파일명'이라고 했다. -->
-	<!-- 이 경로와 파일명이 {1}과 {2}에 들어가는 것이다. 숫자는 *의 순서에 맞게 적어준다. -->
-	<definition name="/*/*" extends="Layout">
-		<put-attribute name="contents" value="/WEB-INF/views/{1}/{2}.jsp" />
+	<definition name="hebronIntroduction" template="/WEB-INF/tiles/layout/hebronIntroLayout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
+		<put-attribute name="nav-company" value="/WEB-INF/tiles/tile/nav-company.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
 	</definition>
 	
+	<definition name="hebronProcess" template="/WEB-INF/tiles/layout/hebronProcessLayout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
+		<put-attribute name="nav-process" value="/WEB-INF/tiles/tile/nav-process.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
+	</definition>
+	
+	<definition name="hebronProduct" template="/WEB-INF/tiles/layout/hebronProductLayout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
+		<put-attribute name="nav-product" value="/WEB-INF/tiles/tile/nav-product.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
+	</definition>
+	
+	<definition name="hebronHardware" template="/WEB-INF/tiles/layout/hebronHardwareLayout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
+		<put-attribute name="nav-hardware" value="/WEB-INF/tiles/tile/nav-hardware.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
+	</definition>
+	
+	<definition name="hebronContact" template="/WEB-INF/tiles/layout/hebronContactLayout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
+		<put-attribute name="nav-contact" value="/WEB-INF/tiles/tile/nav-contact.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
+	</definition>
+	
+	<definition name="/*/index" extends="Layout">
+		<put-attribute name="contents" value="/WEB-INF/views/{1}/index.jsp" />
+	</definition>
+	
+	<definition name="/*/introduction/*" extends="hebronIntroduction">
+		<put-attribute name="contents" value="/WEB-INF/views/{1}/introduction/{2}.jsp" />
+	</definition>
+	
+	<definition name="/*/process/*" extends="hebronProcess">
+		<put-attribute name="contents" value="/WEB-INF/views/{1}/process/{2}.jsp" />
+	</definition>
+	
+	<definition name="/*/product/*" extends="hebronProduct">
+		<put-attribute name="contents" value="/WEB-INF/views/{1}/product/{2}.jsp" />
+	</definition>
+	
+	<definition name="/*/hardware/*" extends="hebronHardware">
+		<put-attribute name="contents" value="/WEB-INF/views/{1}/hardware/{2}.jsp" />
+	</definition>
+	
+	<definition name="/*/contact/*" extends="hebronContact">
+		<put-attribute name="contents" value="/WEB-INF/views/{1}/contact/{2}.jsp" />
+	</definition>
 </tiles-definitions>

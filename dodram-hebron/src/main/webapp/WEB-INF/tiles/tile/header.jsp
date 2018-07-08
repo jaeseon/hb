@@ -3,44 +3,48 @@
 <c:set var="contextPath" value="<%= request.getContextPath() %>"></c:set>
 
 <!-- HEADER START -->
-<div class="header-wrap">
-	<div class="nav-bg"></div>
-	<div class="header-details-1-wrap">
-		<div class="header-details-1-container">
-			<span>Korea Best Electronic Technology</span>
-			<div class="customer">
-				<a href="#">고객센터</a>
+<div class="wrap">
+	<div class="header-wrap">
+		<div class="nav-bg"></div>
+		<div class="header-details-1-wrap">
+			<div class="header-details-1-container">
+				<span>Korea Best Electronic Technology</span>
+				<div class="customer">
+					<a href="/hebron/question">고객센터</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="header-details-2-wrap">
-		<div class="header-details-2-container">
-			<a href="${ contextPath }"><img src="/resources/src/images/logo-hebron.jpg"></a>
-			<div class="header-menu">
-				<ul>
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">회사소개</a>
-						<ul class="nav_depth">
-							<li><a href="./company/index.html">회사소개</a></li>
-							<li><a href="#">주요실적</a></li>
-							<li><a href="#">사업분야</a></li>
-							<li><a href="#">조직</a></li>
-						</ul></li>
-					<li><a href="#">제품소개</a>
-						<ul class="nav_depth">
-							<li><a href="#">핵심기술</a></li>
-							<li><a href="#">생산제품</a></li>
-							<li><a href="#">생산장비</a></li>
-							<li><a href="#">생산시설</a></li>
-							<li><a href="#">생산기계내역</a></li>
-						</ul></li>
-					<li><a href="#">회사문화</a>
-						<ul class="nav_depth">
-							<li><a href="#">경영철학</a></li>
-							<li><a href="#">갤러리</a></li>
-						</ul></li>
-					<li><a href="#">찾아오시는 길</a></li>
-				</ul>
+		<div class="header-details-2-wrap">
+			<div class="header-details-2-container">
+				<a href="${ contextPath }"><img src="/resources/src/images/logo-hebron.jpeg"></a>
+				<div class="header-menu">
+					<ul>
+						<li><a href="/hebron">HOME</a></li>
+						<li><a href="/hebron/introduction">회사소개</a>
+							<ul class="nav_depth">
+								<li><a href="/hebron/introduction">회사소개</a></li>
+								<li><a href="/hebron/introduction/organization">조직 및 현황</a></li>
+							</ul>
+						</li>
+						<li><a href="/hebron/f_process">공정과정</a>
+							<ul class="nav_depth">
+								<li><a href="/hebron/f_process">판금공정</a></li>
+								<li><a href="/hebron/s_process">도장공정</a></li>
+							</ul>
+						</li>
+						<li><a href="/hebron/v_product">생산제품</a>
+							<ul class="nav_depth">
+								<li><a href="/hebron/v_product">생산설비</a></li>
+								<li><a href="/hebron/f_product">전기, 계장</a></li>
+								<li><a href="/hebron/s_product">전자, 통신</a></li>
+								<li><a href="/hebron/t_product">오븐</a></li>
+								<li><a href="/hebron/o_product">장비</a></li>
+							</ul>
+						</li>
+						<li><a href="/hebron/hardware">기계설비</a></li>
+						<li><a href="/hebron/visit">찾아오시는 길</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

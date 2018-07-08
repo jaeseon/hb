@@ -1,10 +1,4 @@
 @CHARSET "UTF-8";
-.wrap {
-  min-width: 1170px;
-  background-image: url("../src/images/img-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 /* Header */
 .header-wrap {
   position: fixed;
@@ -38,7 +32,6 @@
   padding: 0 20px;
   margin: 0 auto;
   line-height: 33px;
-  letter-spacing: 0.8px;
   box-sizing: border-box;
   text-align: center;
   color: #cccccc;
@@ -73,7 +66,8 @@
   position: absolute;
   top: 30px;
   left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  transform: translateX(-27%);
   z-index: 3;
 }
 .header-menu > ul > li {
@@ -84,8 +78,8 @@
   border-left: 1px solid #e5e5e5;
 }
 .header-menu > ul > li > ul {
-  height: 168px;
-  margin: 24px 9px 0 -9px;
+  height: 162px;
+  margin: 29px 9px 0 -9px;
   border-right: 1px solid #e5e5e5;
   box-sizing: border-box;
   font-size: 12px;
