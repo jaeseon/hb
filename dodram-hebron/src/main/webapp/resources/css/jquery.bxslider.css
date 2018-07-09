@@ -4,7 +4,6 @@
 ===================================*/
 .bx-wrapper {
   position: relative;
-  margin-bottom: 60px;
   padding: 0;
   *zoom: 1;
   -ms-touch-action: pan-y;
@@ -24,6 +23,7 @@ ul.bxslider {
 .bx-viewport {
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);
+  height: auto !important;
 }
 /** THEME
 ===================================*/

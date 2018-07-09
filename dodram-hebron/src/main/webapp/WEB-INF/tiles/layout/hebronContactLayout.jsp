@@ -9,7 +9,12 @@
 </head>
 <body>
 	<tiles:insertAttribute name="header"/>
-	<tiles:insertAttribute name="contents"/>
+	<div class="wrap">
+		<div class="wrap-introduction">
+			<tiles:insertAttribute name="nav-contact"/>
+			<tiles:insertAttribute name="contents"/>
+		</div>
+	</div>
 	<tiles:insertAttribute name="footer"/>
 </body>
 </html>
