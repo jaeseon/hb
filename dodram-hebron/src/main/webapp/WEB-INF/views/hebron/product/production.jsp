@@ -4,8 +4,8 @@
 		<div class="intro-title">생산설비</div>
 		<div class="intro-company-introduce1">
 			<span>
-				대한민국 판금기술 자립화 꿈을 넘어<br />
-				헤브론테크의 기술이 세계 표준이 되는 그날까지..!
+				헤브론테크 기술이 대한민국을 넘어<br />
+				세계로 뻗어가는 그 날까지
 			</span>
 			<p>
 				㈜헤브론테크에서 취급하는 생산설비 입니다.
