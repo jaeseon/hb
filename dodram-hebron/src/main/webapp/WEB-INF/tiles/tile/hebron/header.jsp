@@ -10,13 +10,15 @@
 			<div class="header-details-1-container">
 				<span>Korea Best Electronic Technology</span>
 				<div class="customer">
+					<a href="/">메인</a>
+					<span style="padding: 0 20px;">|</span>
 					<a href="/hebron/question">고객센터</a>
 				</div>
 			</div>
 		</div>
 		<div class="header-details-2-wrap">
 			<div class="header-details-2-container">
-				<a href="${ contextPath }"><img src="/resources/src/images/logo-hebron.jpeg"></a>
+				<a href="/hebron"><img src="/resources/src/images/logo-hebron.jpeg"></a>
 				<div class="header-menu">
 					<ul>
 						<li><a href="/hebron">HOME</a></li>

@@ -66,8 +66,8 @@
   position: absolute;
   top: 30px;
   left: 50%;
-  width: 100%;
-  transform: translateX(-27%);
+  width: 60%;
+  transform: translateX(-42%);
   z-index: 3;
 }
 .header-menu > ul > li {

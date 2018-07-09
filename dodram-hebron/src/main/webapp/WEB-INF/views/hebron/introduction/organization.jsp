@@ -18,16 +18,11 @@
 		<!-- Organization-chart-START -->
 		<div class="organization-chart-container">
 			<div class="organization-chart">
-				<div class="organi-main">김중수(CEO)</div>
-				<div class="organi-main">최재두(이사)</div>
+				<div class="organi-main">CEO</div>
+				<div class="organi-main">이사</div>
 				<div class="organi-sub-container">
 					<div class="organi-sub">
 						<span>영업관리부</span>
-						<ul>
-							<li>남경희 부장</li>
-							<li>김사라 대리</li>
-							<li>고경순 사원</li>
-						</ul>
 						<ul>
 							<li>- 영업</li>
 							<li>- 재정관리</li>
@@ -37,10 +32,6 @@
 					<div class="organi-sub">
 						<span>설계부</span>
 						<ul>
-							<li>노종환 차장</li>
-							<li>이승엽 사원</li>
-						</ul>
-						<ul>
 							<li>- 제품 도면작성</li>
 							<li>- 도면관리</li>
 						</ul>
@@ -48,24 +39,19 @@
 					<div class="organi-sub">
 						<span>생산부</span>
 						<ul>
-							<li>- 레이저: 박상민 사원</li>
-							<li>- NCT: 민짜잉 사원</li>
-							<li>- 절곡: 탁광일 대리</li>
-							<li>- 절곡: 최고창 사원</li>
-							<li>- 용접: 김재봉 팀장</li>
-							<li>- 용접: 박기준 사원</li>
-							<li>- 사상: 나잉린우 사원</li>
-							<li>- 도장: 이방현 팀장</li>
-							<li>- 도장: 이규대 사원</li>
-							<li>- 납품: 조용재 주임</li>
+							<li>- 레이저</li>
+							<li>- NCT</li>
+							<li>- 절곡</li>
+							<li>- 용접</li>
+							<li>- 사상</li>
+							<li>- 도장</li>
+							<li>- 납품</li>
 						</ul>
 					</div>
 					<div class="organi-sub">
 						<span>품질관리부</span>
 						<ul>
-							<li>품질검사: 문승년 팀장</li>
-						</ul>
-						<ul>
+							<li>- 품질검사</li>
 							<li>- 제품일정 관리</li>
 							<li>- 검사장비 검.교정</li>
 							<li>- 제품측정</li>
@@ -73,9 +59,6 @@
 							<li>- 성적서 확인, 작성</li>
 						</ul>
 						<span>A/S관리</span>
-						<ul>
-							<li>A/S관리: 강겨레 사원</li>
-						</ul>
 						<ul>
 							<li>- A/S 기록 및 관리</li>
 						</ul>

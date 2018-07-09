@@ -1,33 +1,57 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<div class="intro-container">
+<div class="contact-container">
 	<div class="intro-text">
-		<div class="intro-title">제품&견적 문의</div>
+		<div class="intro-title">찾아오시는 길</div>
 		<div class="intro-company-introduce1">
 			<span>
-				세상의 중심에 서서 세상을 향한 기술로 세상의 행복을 위해<br />
-				끊임없는 열정과 정진으로 세계를 향해 비상하고 있습니다.
+				헤브론테크는<br />
+				옳은 일은 올바르게 하기 위해 정진합니다.
 			</span>
 			<p>
-				㈜헤브론테크는 전장판넬 판금, 판금제작, 레이저가공, 자체분체도장 서비스를<br />
-				제공하는 회사입니다.
+				옳은 일이란 핵심 가치를 지향하는 것이며, 올바르게 함이란 최상의 효과를 내기 위해<br />
+				최고의 효율을 기하는 것입니다. 언제나 고객 중심적인 사고로 고객 가치를 극대화하고,<br />
+				현재보다는 미래의 기회를 가치 기준으로 판단합니다.
 			</p>
 		</div>
 		<div class="intro-company-introduce2">
-			<p>
-				헤브론테크는 <b>2011년</b>에 설립되어 현재 20여 명의 전문기술인력을 보유하고 있으며 <span>㈜한양대학교, ㈜SK텔레콤</span> 중계 판넬 제작지정을 시작으로
-				<b>2012년</b>에 <span>포항지능로봇 연구센터, ㈜삼성전자</span> 반도체 장비 Frame을 제작하였습니다. <b>2013년</b>은 <span>디엠테크㈜</span> BAKE OVEN (SUS) 판금 제작을 도맡았고
-				우수한 기술력을 바탕으로 텐션가이드 시스템 개발에 특허를 등록했으며, <b>2014년</b>에는 SNU전장판넬을 전문적으로 제작하며 벤처기업으로 등록하였습니다.
-				<b>2015년</b>은 <span>에드워드사</span> 진공챔버 Frame을 제작하고 음식물 쓰레기 분리기 시스템에 특허를 등록하는 등 꾸준한 성장을 보여주었고, <b>2016년</b> 전기장치판넬 총 50개사가 등록되었으며
-				<b>2017년</b>에는 <span>입장공장 준공 입주</span>를 하는 등 끊임없이 발전 하였습니다.
-			</p>
-			<p>
-				헤브론테크는 대한민국 판금제작의 꿈을 넘어, 장차 우리의 기술이 <span>세계 표준이 되는 궁극적인 목표</span>입니다.
-				<span>헤브론테크를 역동적으로 살아 움직이게 하는 원천은 항상 최고를 향한 최선의 노력을 아끼지 않는 헤브론테크의 모든 구성원입니다.</span>
-				그리고 불가능의 역사를 가능의 현실로 만들어 온 헤브론테크는 대한민국의 판금 제작의 우수성을 전 세계에 알리는 대표 기업이 될 것입니다.
-			</p>
-			<p>
-				헤브론테크는 끊임없는 열정과 정진으로 세계로의 드높은 비상을 위한 도약대에 우뚝 서 있습니다.
-			</p>
+			<div class="address-table-container">
+				<table>
+					<tr>
+						<td>도로명 주소</td>
+						<td>충청남조 천안시 서북구 입장면 섶머리2길 12-33</td>
+					</tr>
+					<tr>
+						<td>지번 주소</td>
+						<td>신두리 91-10</td>
+					</tr>
+					<tr>
+						<td>우편번호</td>
+						<td>31027</td>
+					</tr>
+				</table>
+			</div>
+			<div id="map"></div>
 		</div>
 	</div>
 </div>
+
+<script>
+	function initMap() {
+		var myLatLng = {lat: 36.917532, lng: 127.2023998};
+	
+	    // Create a map object and specify the DOM element
+	    // for display.
+	    var map = new google.maps.Map(document.getElementById('map'), {
+	      center: myLatLng,
+	      zoom: 14
+	    });
+	
+	    // Create a marker and set its position.
+	    var marker = new google.maps.Marker({
+	      map: map,
+	      position: myLatLng,
+	      title: 'HebronTech'
+	    });
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6KY5-RMKqMY9jUoKlJ3AODcdNvjv0f1M&callback=initMap" async defer></script>

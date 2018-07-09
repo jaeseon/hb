@@ -4,49 +4,63 @@
 "http://tiles.apache.org/dtds/tiles-config_3_0.d">
 
 <tiles-definitions>
-	<definition name="Layout" template="/WEB-INF/tiles/layout/layout.jsp">
-		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
-		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
+	<!-- 도드람바이오 START -->
+	<definition name="dodramLayout" template="/WEB-INF/tiles/layout/layout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/dodram/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/dodram/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/dodram/footer.jsp" />
+	</definition>
+	
+	<definition name="/dodram/index" extends="dodramLayout">
+		<put-attribute name="contents" value="/WEB-INF/views/dodram/index.jsp" />
+	</definition>
+	<!-- 도드람바이오 END -->	
+	
+	<!-- 헤브론테크 START -->
+	<definition name="hebronLayout" template="/WEB-INF/tiles/layout/layout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/hebron/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/hebron/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/hebron/footer.jsp" />
 	</definition>
 	
 	<definition name="hebronIntroduction" template="/WEB-INF/tiles/layout/hebronIntroLayout.jsp">
-		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
-		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
-		<put-attribute name="nav-company" value="/WEB-INF/tiles/tile/nav-company.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/hebron/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/hebron/header.jsp" />
+		<put-attribute name="nav-company" value="/WEB-INF/tiles/tile/hebron/nav-company.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/hebron/footer.jsp" />
 	</definition>
 	
 	<definition name="hebronProcess" template="/WEB-INF/tiles/layout/hebronProcessLayout.jsp">
-		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
-		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
-		<put-attribute name="nav-process" value="/WEB-INF/tiles/tile/nav-process.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/hebron/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/hebron/header.jsp" />
+		<put-attribute name="nav-process" value="/WEB-INF/tiles/tile/hebron/nav-process.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/hebron/footer.jsp" />
 	</definition>
 	
 	<definition name="hebronProduct" template="/WEB-INF/tiles/layout/hebronProductLayout.jsp">
-		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
-		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
-		<put-attribute name="nav-product" value="/WEB-INF/tiles/tile/nav-product.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/hebron/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/hebron/header.jsp" />
+		<put-attribute name="nav-product" value="/WEB-INF/tiles/tile/hebron/nav-product.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/hebron/footer.jsp" />
 	</definition>
 	
 	<definition name="hebronHardware" template="/WEB-INF/tiles/layout/hebronHardwareLayout.jsp">
-		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
-		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
-		<put-attribute name="nav-hardware" value="/WEB-INF/tiles/tile/nav-hardware.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/hebron/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/hebron/header.jsp" />
+		<put-attribute name="nav-hardware" value="/WEB-INF/tiles/tile/hebron/nav-hardware.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/hebron/footer.jsp" />
 	</definition>
 	
 	<definition name="hebronContact" template="/WEB-INF/tiles/layout/hebronContactLayout.jsp">
-		<put-attribute name="meta" value="/WEB-INF/tiles/tile/meta.jsp" />
-		<put-attribute name="header" value="/WEB-INF/tiles/tile/header.jsp" />
-		<put-attribute name="nav-contact" value="/WEB-INF/tiles/tile/nav-contact.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/tiles/tile/footer.jsp" />
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/hebron/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/hebron/header.jsp" />
+		<put-attribute name="nav-contact" value="/WEB-INF/tiles/tile/hebron/nav-contact.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/hebron/footer.jsp" />
 	</definition>
 	
-	<definition name="/*/index" extends="Layout">
-		<put-attribute name="contents" value="/WEB-INF/views/{1}/index.jsp" />
+	
+	<definition name="/hebron/index" extends="hebronLayout">
+		<put-attribute name="contents" value="/WEB-INF/views/hebron/index.jsp" />
 	</definition>
 	
 	<definition name="/*/introduction/*" extends="hebronIntroduction">
@@ -68,4 +82,6 @@
 	<definition name="/*/contact/*" extends="hebronContact">
 		<put-attribute name="contents" value="/WEB-INF/views/{1}/contact/{2}.jsp" />
 	</definition>
+	<!-- 헤브론테크 END -->
+	
 </tiles-definitions>

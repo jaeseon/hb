@@ -33,11 +33,11 @@
 					<div class="notice-content">
 						<table style="width: 100%">
 							<tr>
-								<td><a href="#">헤브론테크 공지사항입니다.</a></td>
-								<td>2018-06-24</td>
+								<td><a href="#">헤브론테크 두 번째 공지사항입니다.</a></td>
+								<td>2018-07-08</td>
 							</tr>
 							<tr>
-								<td><a href="#">두 번째</a></td>
+								<td><a href="#">첫 번째 공지사항!</a></td>
 								<td>2018-06-24</td>
 							</tr>
 						</table>
@@ -53,10 +53,10 @@
 						헤브론테크 <span>제품군</span>
 					</div>
 					<ul>
-						<li><a href="#"><img src="/resources/src/images/09.png">에드워드 제품</a></li><!--
-						--><li><a href="#"><img src="/resources/src/images/10.png">피에스텍 제품</a></li><!--
-						--><li><a href="#"><img src="/resources/src/images/11.png">제타 제품</a></li><!--
-						--><li><a href="#"><img src="/resources/src/images/12.png">SK통신판넬</a></li>
+						<li><a href="/hebron/f_product"><img src="/resources/src/images/09.png">에드워드 제품</a></li><!--
+						--><li><a href="/hebron/f_product"><img src="/resources/src/images/10.png">피에스텍 제품</a></li><!--
+						--><li><a href="/hebron/f_product"><img src="/resources/src/images/11.png">제타 제품</a></li><!--
+						--><li><a href="/hebron/f_product"><img src="/resources/src/images/12.png">SK통신판넬</a></li>
 					</ul>
 				</div>
 			</div>
