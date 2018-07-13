@@ -31,8 +31,8 @@
 				<div class="ms-box-container">
 					<div class="ms-box noti">
 						공지사항<br />
-						ㅁㄴㅇㄻㄴㅇㄹ<br />
-						아놔
+						<br />
+						
 					</div>
 					<div class="ms-box info">
 						경영정보<br />
