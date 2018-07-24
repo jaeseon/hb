@@ -9,7 +9,7 @@
 			Korea Best Food Waste Disposal
 			<div class="menu-header-1">
 				<ul>
-					<li><a href="#">메인</a></li><!--
+					<li><a href="/">메인</a></li><!--
 					--><li><span>|</span></li><!--
 					--><li><a href="#">고객센터</a></li>
 				</ul>

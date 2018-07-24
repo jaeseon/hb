@@ -4,6 +4,7 @@
 	width: 100%;
 	min-height: 920px;
 	background-color: #f5f5f5;
+	padding-top: 103px;
 }
 .container {
 	width: 1170px;
@@ -64,12 +65,26 @@
 	background: url("/resources/src/images/img-dodram-main02.jpg") 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.intro .box-text {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 26px;
+	line-height: 28px;
 }
 .operation {
-	background: url("/resources/src/images/img-dodram-main03.png") 50%;
-	background-size: cover;
+	background: url("/resources/src/images/img-dodram-main03.png") 50% 130%;
+	background-size: 170%;
 	background-repeat: no-repeat;
-	background-color: #ccc;
+	background-color: #efefef;
+}
+.operation .box-text {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 26px;
+	line-height: 28px;
+	color: #333;
 }
 .ms-box-container {
 	display: flex;
@@ -87,19 +102,131 @@
 	margin-bottom: 6px;
 }
 .oper {
-	
+	position: relative;
+	background: url("/resources/src/images/img-dodram-main06.jpg") 59%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+.oper:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(146, 146, 146, .25);
+	z-index: -1;
+	content: "";
+}
+.oper span {
+	display: inline-block;
+	margin-bottom: 18px;
+	font-size: 24px;
+	font-weight: 400;
+	color: #000;
+}
+.oper .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 26px;
+	color : #000;
 }
 .mark {
-	background: url("/resources/src/images/logo-dodram.jpg") 50% bottom;
-	background-size: 65%;
+	background: url("/resources/src/images/logo-dodram.jpg") 50% 85%;
+	background-size: 60%;
 	background-repeat: no-repeat;
 	background-color: #fff;
 }
+.mark .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+	padding: 14px 26px;
+	color : #333;
+}
+.mark span {
+	color: #49b845;
+}
 .noti {
-	
+	position: relative;
+	background-image: url("/resources/src/images/img-dodram-main09.jpg");
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-position: 100% 100%;
+	background-size: 60%;
+	cursor: pointer;
+}
+.noti span {
+	display: inline-block;
+	margin-bottom: 18px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #000;
+}
+.noti .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 26px;
+	color : #333;
+}
+.notice-more-container {
+	position: absolute;
+	top: 24px;
+	right: 34px;
+	width: 28px;
+	height: 28px;
+	content: "";
+	cursor: pointer;
+}
+.notice-more {
+	position: absolute;
+	border-radius: 12px;
+	background-color: #333;
+	content: "";
+}
+.notice-more:nth-of-type(1) {
+	width: 22px;
+	height: 4px;
+	top: 14px;
+	right: 0;
+}
+.notice-more:nth-of-type(2) {
+	width: 4px;
+	height: 22px;
+	top: 5px;
+	right: 9px;
 }
 .info {
-	
+	position: relative;
+	background: url("/resources/src/images/img-dodram-main07.jpg") 85%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+.info .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 26px;
+	color : #fff;
+}
+.info span {
+	display: inline-block;
+	margin-bottom: 18px;
+	font-size: 24px;
+	font-weight: 400;
+}
+.info:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(74, 86, 66, .25);
+	z-index: -1;
+	content: "";
 }
 .middle-box-container {
 	display: flex;
@@ -114,7 +241,7 @@
 	flex: 1;
 	height: 100%;
 	margin-right: 6px;
-	background-color: #ccd;
+	background-color: #fff;
 }
 .middle-box2:nth-child(2) {
 	position: relative;
@@ -128,6 +255,60 @@
 	left: 0;
 	width: 100%;
 	height: 37px;
-	background-color: #add;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	padding: 4px 20px;
+	content: "Contact us";
+	box-sizing: border-box;
+	background-color: #555;
+	cursor: pointer;
+}
+.business {
+	background-image: url("/resources/src/images/img-dodram-main05.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+.business span {
+	display: inline-block;
+	margin-bottom: 26px;
+	font-size: 24px;
+	font-weight: 400;
+}
+.business .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 46px 26px;
+	color : #333;
+}
+.product {
+	background: url("/resources/src/images/img-dodram-main08.jpg") 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	z-index: 1;
+}
+.product .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 46px 26px;
+	color : #fff;
+}
+.product span {
+	display: inline-block;
+	margin-bottom: 26px;
+	font-size: 24px;
+	font-weight: 400;	
+}
+.product:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	z-index: -1;
 	content: "";
 }
