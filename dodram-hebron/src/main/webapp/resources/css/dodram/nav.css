@@ -1,1 +1,22 @@
 @charset "UTF-8";
+
+.nav {
+	display: inline-block;
+	width: 200px;
+}
+.nav-title-box {
+	padding: 40px 0;
+	font-size: 24px;
+	border-bottom: 2px solid #000;
+}
+.nav-list-box > ul > li {
+	padding: 14px 10px;
+	font-size: 14px;
+}
+.nav-list-box > ul > li > a:hover {
+	color: #4cb845;
+	font-weight: 600;
+}
+.nav-list-box > ul > li + li {
+	border-top: 1px solid #ccc;
+}

@@ -11,8 +11,19 @@
 		<put-attribute name="footer" value="/WEB-INF/tiles/tile/dodram/footer.jsp" />
 	</definition>
 	
+	<definition name="dodramProduct" template="/WEB-INF/tiles/layout/dodramProductLayout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/dodram/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/dodram/header.jsp" />
+		<put-attribute name="nav-product" value="/WEB-INF/tiles/tile/dodram/nav-product.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/dodram/footer.jsp" />
+	</definition>
+	
 	<definition name="/dodram/index" extends="dodramLayout">
 		<put-attribute name="contents" value="/WEB-INF/views/dodram/index.jsp" />
+	</definition>
+	
+	<definition name="/dodram/product/*" extends="dodramProduct">
+		<put-attribute name="contents" value="/WEB-INF/views/dodram/product/{1}.jsp" />
 	</definition>
 	<!-- 도드람바이오 END -->	
 	
@@ -63,24 +74,24 @@
 		<put-attribute name="contents" value="/WEB-INF/views/hebron/index.jsp" />
 	</definition>
 	
-	<definition name="/*/introduction/*" extends="hebronIntroduction">
-		<put-attribute name="contents" value="/WEB-INF/views/{1}/introduction/{2}.jsp" />
+	<definition name="/hebron/introduction/*" extends="hebronIntroduction">
+		<put-attribute name="contents" value="/WEB-INF/views/hebron/introduction/{1}.jsp" />
 	</definition>
 	
-	<definition name="/*/process/*" extends="hebronProcess">
-		<put-attribute name="contents" value="/WEB-INF/views/{1}/process/{2}.jsp" />
+	<definition name="/hebron/process/*" extends="hebronProcess">
+		<put-attribute name="contents" value="/WEB-INF/views/hebron/process/{1}.jsp" />
 	</definition>
 	
-	<definition name="/*/product/*" extends="hebronProduct">
-		<put-attribute name="contents" value="/WEB-INF/views/{1}/product/{2}.jsp" />
+	<definition name="/hebron/product/*" extends="hebronProduct">
+		<put-attribute name="contents" value="/WEB-INF/views/hebron/product/{1}.jsp" />
 	</definition>
 	
-	<definition name="/*/hardware/*" extends="hebronHardware">
-		<put-attribute name="contents" value="/WEB-INF/views/{1}/hardware/{2}.jsp" />
+	<definition name="/hebron/hardware/*" extends="hebronHardware">
+		<put-attribute name="contents" value="/WEB-INF/views/hebron/hardware/{1}.jsp" />
 	</definition>
 	
-	<definition name="/*/contact/*" extends="hebronContact">
-		<put-attribute name="contents" value="/WEB-INF/views/{1}/contact/{2}.jsp" />
+	<definition name="/hebron/contact/*" extends="hebronContact">
+		<put-attribute name="contents" value="/WEB-INF/views/hebron/contact/{1}.jsp" />
 	</definition>
 	<!-- 헤브론테크 END -->
 	

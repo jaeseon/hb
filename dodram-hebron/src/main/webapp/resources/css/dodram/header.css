@@ -28,6 +28,9 @@
 .menu-header-1 a {
 	color: #f8f8f8;
 }
+.menu-header-1 a:hover {
+	font-weight: 600;
+}
 .menu-header-1 span {
 	color: #f4f4f4;
 }
