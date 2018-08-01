@@ -385,3 +385,255 @@
 	line-height: 30px;
 	font-size: 14px;
 }
+.title-box {
+	display: inline-block;
+	width: 15%;
+	margin: 16px 12px 0 0;
+	padding: 10px 8px;
+	background-color: #3e6cad;
+	text-align: center;
+	color: #fff;
+}
+.contents-box {
+	display: inline-block;
+	width: 80%;
+	vertical-align: middle;
+	font-size: 13px;
+	padding: 6px 0;
+}
+.p-explication {
+	margin-top: 20px;
+	line-height: 24px;
+	text-align: justify;
+}
+.ferti-table {
+	width: 100%;
+	border: 1px solid #3386B2;
+}
+.ferti-table > tbody > tr {
+	border: 1px solid #3386B2;
+	font-size: 12px;
+}
+.ferti-table > tbody > tr > th {
+	padding: 6px 0;
+	font-size: 14px;
+	color: #fff;
+	background-color: #3386B2;
+}
+.ferti-table > tbody > tr > th:nth-of-type(1) {
+	width: 15%;
+}
+.ferti-table > tbody > tr > th:nth-of-type(2) {
+	width: 42.5%;
+}
+.ferti-table > tbody > tr > td:nth-of-type(1) {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 600;
+}
+.ferti-table ul {
+	list-style: disc;
+	margin-left: 26px;
+}
+.ferti-table ul > li {
+	line-height: 32px;
+}
+.base-img {
+	position: relative;
+	width: 447px;
+	height: 376px;
+	background-image: url("/resources/src/images/img-dodram-product13.png");
+	background-repeat: no-repeat;
+	margin: 175px 260px 0;
+}
+.base-img:after {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	width: 220px;
+	height: 40px;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+	content: "교반, 혼합, 반응";
+}
+.base-img > div {
+	position: absolute;
+	width: 170px;
+	height: 140px;
+	color: #3386B2;
+	font-weight: 600;
+	background-repeat: no-repeat;
+}
+.base-img > div:nth-of-type(1) {
+	top: -145px;
+	left: -175px;
+	background-image: url("/resources/src/images/img-dodram-product14.png");
+}
+.base-img > div:nth-of-type(1):after {
+	position: absolute;
+	top: -24px;
+	left: 0;
+	width: 200px;
+	content: "톱밥 (20%)";
+}
+.base-img > div:nth-of-type(2) {
+	top: -145px;
+	left: 0px;
+	background-image: url("/resources/src/images/img-dodram-product15.png");
+}
+.base-img > div:nth-of-type(2):after {
+	position: absolute;
+	top: -24px;
+	left: 0;
+	width: 200px;
+	content: "생석회 (15%)";
+}
+.base-img > div:nth-of-type(3) {
+	top: 0;
+	left: -175px;
+	background-image: url("/resources/src/images/img-dodram-product16.png");
+}
+.base-img > div:nth-of-type(3):after {
+	position: absolute;
+	bottom: -24px;
+	left: 0;
+	width: 200px;
+	content: "동물사체";
+}
+
+.base-img2 {
+	position: relative;
+	width: 322px;
+	height: 500px;
+	background-image: url("/resources/src/images/img-dodram-product18.png");
+	margin: 175px 260px 0;
+}
+.base-img2:after {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	width: 180px;
+	height: 40px;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 28px;
+	content: "이동식 처리설비 (교반, 혼합, 반응)";
+}
+.base-img2 > div {
+	position: absolute;
+	width: 170px;
+	height: 140px;
+	color: #3386B2;
+	font-weight: 600;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.base-img2 > div:nth-of-type(1) {
+	top: -145px;
+	left: -175px;
+	background-image: url("/resources/src/images/img-dodram-product19.png");
+}
+.base-img2 > div:nth-of-type(1):after {
+	position: absolute;
+	top: -24px;
+	left: 0;
+	width: 200px;
+	content: "매립사체";
+}
+.base-img2 > div:nth-of-type(2) {
+	top: -145px;
+	left: 0px;
+	background-image: url("/resources/src/images/img-dodram-product20.png");
+	background-position: 50%;
+}
+.base-img2 > div:nth-of-type(2):after {
+	position: absolute;
+	top: -24px;
+	left: 0;
+	width: 200px;
+	content: "매립사체";
+}
+.base-img2 > div:nth-of-type(3) {
+	top: 0;
+	left: -175px;
+	background-image: url("/resources/src/images/img-dodram-product14.png");
+}
+.base-img2 > div:nth-of-type(3):after {
+	position: absolute;
+	bottom: -24px;
+	left: 0;
+	width: 200px;
+	content: "톱밥";
+}
+.base-img2 > div:nth-of-type(4) {
+	top: 167px;
+	left: -175px;
+	background-image: url("/resources/src/images/img-dodram-product15.png");
+	background-repeat: no-repeat;
+}
+.base-img2 > div:nth-of-type(4):after {
+	position: absolute;
+	bottom: -24px;
+	left: 0;
+	width: 200px;
+	content: "생석회";
+}
+.base-img2 + div {
+	position: relative;
+	width: 430px;
+	height: 500px;
+	margin: 40px auto 90px;
+}
+.base-img2 + div:after {
+	position: absolute;
+	bottom: -34px;
+	right: 0;
+	font-weight: 600;
+	font-size: 24px;
+	content: "퇴비 생산";
+}
+.base-img2 + div > img {
+	height: 100%;
+	border-radius: 8px;
+	border: 1px solid #3386B2;
+}
+.flex-box {
+	display: flex;
+}
+.flex-box:last-child {
+	padding-bottom: 50px;
+}
+.flex-contents {
+	position: relative;
+	flex: 1;
+	margin: 0 8px 40px;
+}
+.flex-contents:after {
+	position: absolute;
+	font-weight: 600;
+	font-size: 18px;
+	bottom: -28px;
+	right: 0;
+}
+.flex1:after {
+	content: "LAZER L-3030S, TRUMPF";	
+}
+.flex2:after {
+	content: "NCT VIPROS357[ATC], AMADA";
+}
+.flex3:after {
+	content: "절곡";
+}
+.flex4:after {
+	content: "분체도장";
+}
+.flex5:after {
+	content: "연구 설계";
+}
+.flex6:after {
+	content: "판매 관리";
+}
+.flex-contents > img {
+	height: 100%;
+} 
