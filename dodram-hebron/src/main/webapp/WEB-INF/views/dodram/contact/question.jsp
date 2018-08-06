@@ -5,7 +5,7 @@
 		<div class="intro-title">제품&견적 문의</div>
 		<div class="intro-company-introduce1">
 			<span>
-				헤브론테크는<br />
+				도드람바이오는<br />
 				옳은 일은 올바르게 하기 위해 정진합니다.
 			</span>
 			<p>

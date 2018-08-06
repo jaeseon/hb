@@ -11,7 +11,7 @@
 				<ul>
 					<li><a href="/">메인</a></li><!--
 					--><li><span>|</span></li><!--
-					--><li><a href="question">고객센터</a></li>
+					--><li><a href="/dodram/question">고객센터</a></li>
 				</ul>
 			</div>
 		</div>

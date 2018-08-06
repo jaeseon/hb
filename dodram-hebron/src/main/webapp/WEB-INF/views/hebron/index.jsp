@@ -22,7 +22,7 @@
 						헤브론테크 <span>영상</span>
 					</div>
 					<div class="youtubeWrap">
-						<iframe src="https://www.youtube.com/embed/YmSOGgiNDRU?autohide=1&amp;controls=1&amp;showinfo=0&amp;modestbranding=1&amp;rel=0"></iframe>
+						<iframe src="https://www.youtube.com/embed/emzSaAx7sKY?autohide=1&amp;controls=1&amp;showinfo=0&amp;modestbranding=1&amp;rel=0"></iframe>
 					</div>
 				</div>
 	
@@ -33,12 +33,12 @@
 					<div class="notice-content">
 						<table style="width: 100%">
 							<tr>
-								<td><a href="#">헤브론테크 두 번째 공지사항입니다.</a></td>
-								<td>2018-07-08</td>
+								<!-- <td><a href="#">헤브론테크 두 번째 공지사항입니다.</a></td>
+								<td>2018-07-08</td> -->
 							</tr>
 							<tr>
-								<td><a href="#">첫 번째 공지사항!</a></td>
-								<td>2018-06-24</td>
+								<!-- <td><a href="#">첫 번째 공지사항!</a></td>
+								<td>2018-06-24</td> -->
 							</tr>
 						</table>
 					</div>

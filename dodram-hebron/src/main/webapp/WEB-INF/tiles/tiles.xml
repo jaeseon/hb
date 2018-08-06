@@ -18,12 +18,23 @@
 		<put-attribute name="footer" value="/WEB-INF/tiles/tile/dodram/footer.jsp" />
 	</definition>
 	
+	<definition name="dodramContact" template="/WEB-INF/tiles/layout/dodramContactLayout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/dodram/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/dodram/header.jsp" />
+		<put-attribute name="nav-contact" value="/WEB-INF/tiles/tile/dodram/nav-contact.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/dodram/footer.jsp" />
+	</definition>
+	
 	<definition name="/dodram/index" extends="dodramLayout">
 		<put-attribute name="contents" value="/WEB-INF/views/dodram/index.jsp" />
 	</definition>
 	
 	<definition name="/dodram/product/*" extends="dodramProduct">
 		<put-attribute name="contents" value="/WEB-INF/views/dodram/product/{1}.jsp" />
+	</definition>
+	
+	<definition name="/dodram/contact/*" extends="dodramContact">
+		<put-attribute name="contents" value="/WEB-INF/views/dodram/contact/{1}.jsp" />
 	</definition>
 	<!-- 도드람바이오 END -->	
 	

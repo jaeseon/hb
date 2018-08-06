@@ -636,4 +636,66 @@
 }
 .flex-contents > img {
 	height: 100%;
-} 
+}
+.contact-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background: url("/resources/src/images/bg-contact.jpg") 85% -7% no-repeat;
+}
+.question-form-container {
+	width: 500px;
+	border: 1px solid #3386B2;
+	border-radius: 12px;
+	margin: 30px auto 0;
+	padding: 12px 18px;
+	box-shadow: 0 0 3px #000;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, .6);
+}
+.question-form-container > form > div {
+	padding: 14px 0;
+}
+.question-form-container > form > div img {
+	width: 24px;
+	height: 24px;
+	border: 0;
+	padding: 0 20px 0 15px;
+	vertical-align: middle;
+}
+.question-form-container > form input[type=text], .question-form-container > form input[type=email] {
+	width: 70%;
+	font-size: 12px;
+	border: 0;
+	padding: 7px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.contents-area {
+	width: 73%;
+	border: 1px solid #ccc;
+	padding: 7px 10px;
+	font-size: 12px;
+	box-sizing: border-box;
+	resize: none;
+	overflow: hidden;
+}
+.address-table-container > table {
+	width: 100%;
+	border-top: 1px solid #000;
+}
+.address-table-container > table tr > td:first-child {
+	text-align: center;
+	background-color: #fafafa;
+	font-weight: 600;
+}
+.address-table-container > table td {
+	font-size: 12px;
+	padding: 4px 10px;
+	border-bottom: 1px solid #e1e1e1;
+}
+#map {
+	height: 600px;
+	margin: 60px 0;
+}

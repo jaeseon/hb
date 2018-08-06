@@ -56,6 +56,14 @@ public class SiteMoveController {
 	public String dodram_gas() {
 		return "/dodram/product/gas";
 	}
+	@RequestMapping(value = "/dodram/visit")
+	public String dodram_visit() {
+		return "/dodram/contact/visit";
+	}
+	@RequestMapping(value = "/dodram/question")
+	public String dodram_question() {
+		return "/dodram/contact/question";
+	}
 	
 
 	/*

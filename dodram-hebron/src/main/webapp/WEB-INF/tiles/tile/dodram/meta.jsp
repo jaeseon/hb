@@ -21,3 +21,6 @@
 <script src="/resources/js/jquery_min_v311.js"></script>
 <script src="/resources/js/dodram/jquery.bxslider.js"></script>
 <script src="/resources/js/dodram/dodram.js"></script>
+
+<!-- TITLE -->
+<title>Dodrambio</title>
