@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+body {
+	font-family: "맑은 고딕";
+}
 .wrap {
 	width: 100%;
 	min-height: 920px;

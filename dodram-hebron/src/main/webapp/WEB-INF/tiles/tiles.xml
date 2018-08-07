@@ -106,4 +106,15 @@
 	</definition>
 	<!-- 헤브론테크 END -->
 	
+	<!-- 마이오피스 START -->
+	<definition name="myOfficeLayout" template="/WEB-INF/tiles/layout/myOfficeLayout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/myoffice/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/myoffice/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/myoffice/footer.jsp" />
+	</definition>
+	
+	<definition name="/myOffice/index" extends="myOfficeLayout">
+		<put-attribute name="contents" value="/WEB-INF/views/myOffice/index.jsp" />
+	</definition>
+	<!-- 마이오피스 END -->
 </tiles-definitions>

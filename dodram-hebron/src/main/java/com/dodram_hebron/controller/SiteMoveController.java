@@ -1,5 +1,7 @@
 package com.dodram_hebron.controller;
 
+import java.util.List;
+
 /*
  * 도드람바이오, 헤브론테크 홈페이지 개발
  * Date: 2018-07-07
@@ -8,13 +10,23 @@ package com.dodram_hebron.controller;
 
 import java.util.Locale;
 
+import javax.inject.Inject;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.dodram_hebron.service.MemberService;
+import com.dodram_hebron.vo.MemberVO;
 
 @Controller
 public class SiteMoveController {
+	
+	@Inject
+	private MemberService service;
 	
 	/* 
 	 * 메인
@@ -56,6 +68,7 @@ public class SiteMoveController {
 	public String dodram_gas() {
 		return "/dodram/product/gas";
 	}
+	
 	@RequestMapping(value = "/dodram/visit")
 	public String dodram_visit() {
 		return "/dodram/contact/visit";
@@ -127,4 +140,36 @@ public class SiteMoveController {
 	public String hebron_question() {
 		return "/hebron/contact/question";
 	}
+	
+	/*
+	 * 관리자 페이지 
+	 */ 
+	@RequestMapping(value ="/myOffice")
+	public String admin_index(HttpSession session) {
+		session.setAttribute("Roster_Code", (String) "20180807_8674");
+		
+		String rosterCode = (String) session.getAttribute("Roster_Code");
+		
+		if (rosterCode == null || rosterCode.equals("")) {
+			return "/myOffice/login/index";
+		} else {
+			return "/myOffice/index";
+		}
+	}
+	
+	@RequestMapping(value ="/loginCheck")
+	public void admin_loginCheck(@RequestParam(required=true) String code) {
+		
+	}
+	
+	@RequestMapping(value="testest")
+	public String testest(Model model) throws Exception {
+		
+		List<MemberVO> memberList = service.selectMember();
+		
+		model.addAttribute("memberList", memberList);
+		
+		return "test";
+	}
+	
 }

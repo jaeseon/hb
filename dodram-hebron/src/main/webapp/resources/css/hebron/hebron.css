@@ -1,4 +1,8 @@
 @charset "UTF-8";
+
+body {
+	font-family: "맑은 고딕";
+}
 .wrap {
   min-width: 1170px;
   background-image: url("/resources/src/images/img-background.png");
@@ -98,10 +102,9 @@
 .small-box-items {
   position: relative;
   padding: 10px;
-  flex: 1;
 }
 .small-box-items > img {
-  width: 100%;
+  width: 346.67px;
   height: 244px;
   border-radius: 14px;
 }

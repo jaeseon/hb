@@ -16,7 +16,7 @@
 		<div class="intro-company-introduce2">
 			<div class="sub-title">반도체 장비</div>
 			<div class="slider">
-				<div><img src="/resources/src/images/img-equipment-01.webp"></div>
+				<div><img src="/resources/src/images/img-equipment-01.png"></div>
 			</div>
 			<p>
 				01. 반도체 프레임 제작<br />
@@ -32,7 +32,7 @@
 		<div class="intro-company-introduce2">
 			<div class="sub-title">기계장비 커버제작</div>
 			<div class="slider">
-				<div><img src="/resources/src/images/img-equipment-02.webp"></div>
+				<div><img src="/resources/src/images/img-equipment-02.png"></div>
 			</div>
 			<p>
 				01. 기계장비 커버<br />

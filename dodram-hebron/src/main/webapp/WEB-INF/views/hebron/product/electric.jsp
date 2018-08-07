@@ -16,14 +16,14 @@
 		<div class="intro-company-introduce2">
 			<div class="sub-title">계장 판넬 제작</div>
 			<div class="slider">
-				<div><img src="/resources/src/images/img-electric-01.webp"></div>
-				<div><img src="/resources/src/images/img-electric-02.webp"></div>
-				<div><img src="/resources/src/images/img-electric-03.webp"></div>
-				<div><img src="/resources/src/images/img-electric-04.webp"></div>
-				<div><img src="/resources/src/images/img-electric-05.webp"></div>
-				<div><img src="/resources/src/images/img-electric-06.webp"></div>
-				<div><img src="/resources/src/images/img-electric-07.webp"></div>
-				<div><img src="/resources/src/images/img-electric-08.webp"></div>
+				<div><img src="/resources/src/images/img-electric-01.png"></div>
+				<div><img src="/resources/src/images/img-electric-02.png"></div>
+				<div><img src="/resources/src/images/img-electric-03.png"></div>
+				<div><img src="/resources/src/images/img-electric-04.png"></div>
+				<div><img src="/resources/src/images/img-electric-05.png"></div>
+				<div><img src="/resources/src/images/img-electric-06.png"></div>
+				<div><img src="/resources/src/images/img-electric-07.png"></div>
+				<div><img src="/resources/src/images/img-electric-08.png"></div>
 			</div>
 			<p>
 				01. <b>삼성전자</b> 등에 납품되는 계장판넬<br />
@@ -37,7 +37,7 @@
 		<div class="intro-company-introduce2">
 			<div class="sub-title">전기 판넬 제작</div>
 			<div class="slider">
-				<div><img src="/resources/src/images/img-electric-09.webp"></div>
+				<div><img src="/resources/src/images/img-electric-09.png"></div>
 			</div>
 			<p>
 				01. 수, 배전반<br />
@@ -50,8 +50,8 @@
 		<div class="intro-company-introduce2">
 			<div class="sub-title">SUS, STEEL 분전반</div>
 			<div class="slider">
-				<div><img src="/resources/src/images/img-electric-10.webp"></div>
-				<div><img src="/resources/src/images/img-electric-11.webp"></div>
+				<div><img src="/resources/src/images/img-electric-10.png"></div>
+				<div><img src="/resources/src/images/img-electric-11.png"></div>
 			</div>
 			<p>
 				01. SUS 분전반, 옥외형 분전반<br />
@@ -65,7 +65,7 @@
 		<div class="intro-company-introduce2">
 			<div class="sub-title">잔넬베이스</div>
 			<div class="slider">
-				<div><img src="/resources/src/images/img-electric-12.webp"></div>
+				<div><img src="/resources/src/images/img-electric-12.png"></div>
 			</div>
 			<p>
 				01. 큐비클 잔넬베이스<br />
