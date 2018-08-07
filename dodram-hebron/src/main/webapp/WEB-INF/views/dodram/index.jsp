@@ -11,44 +11,74 @@
 					글로벌 성공키워드
 				</div>
 				<div class="small-box-container">
-					<div class="small-box intro">도드람바이오를<br />소개합니다.</div><!--
-					--><div class="small-box operation">지속적이고<br />건전한 경영을 합니다.</div>
+					<div class="small-box intro">
+						<div class="box-text">
+							도드람바이오를<br />
+							소개합니다.
+						</div>
+					</div><!--
+					--><div class="small-box operation">
+						<div class="box-text">
+							지속적으로<br />
+							건전한 경영을 합니다.
+						</div>
+					</div>
 				</div>
 			</div><!--
 			--><div class="big-box-container">
 				<div class="ms-box-container">
-					<div class="ms-box">
-						기업문화 <br />
-						창의적이고 열정이 묻어나는 <br />
-						유쾌한 기업입니다.
+					<div class="ms-box oper">
+						<div class="box-text">
+							<span>기업문화</span><br />
+							창의적이고<br />
+							열정이 묻어나는<br />
+							유쾌한 기업입니다.
+						</div>
 					</div>
-					<div class="ms-box">
-						도드람바이오의 워드마크는<br />
-						신뢰감과 생동감있는<br />
-						기업 이미지를 표현합니다.
+					<div class="ms-box mark">
+						<div class="box-text">
+							도드람바이오의 워드마크는<br />
+							<span>신뢰감</span>과 <span>생동감</span>있는<br />
+							기업 이미지를 표현합니다.
+						</div>
 					</div>
-					<!-- <div class="middle-box1">
-						해외사업
-					</div> -->
 				</div>
 				<div class="ms-box-container">
-					<div class="ms-box">
-						공지사항<br />
-						ㅁㄴㅇㄻㄴㅇㄹ<br />
-						아놔
+					<div class="ms-box noti">
+						<div class="box-text">
+							<span>공지사항</span><br />
+							<div class="notice-more-container">
+								<div class="notice-more"></div>
+								<div class="notice-more"></div>
+							</div>
+							도드람바이오의 소식을<br />
+							전해드립니다.
+							<br />
+						</div>
 					</div>
-					<div class="ms-box">
-						경영정보<br />
-						우리 기업은 기업의 사회적 책임과 의무를<br />
-						다하는 경영입니다.
+					<div class="ms-box info">
+						<div class="box-text">
+							<span>경영정보</span><br />
+							우리 기업은<br />
+							기업의 사회적 책임과 의무를<br />
+							다하는 경영입니다.
+						</div>
 					</div>
 				</div>
-				<div class="bibox-container">
-					<div class="middle-box2">
-						제품소개
+				<div class="box-container">
+					<div class="middle-box2 business">
+						<div class="box-text">
+							<span>해외사업</span><br />
+							글로벌 비지니스 영역을<br />
+							꾸준히 확장하고 있습니다.
+						</div>
 					</div>
-					<div class="middle-box2">
-						제품소개
+					<div class="middle-box2 product">
+						<div class="box-text">
+							<span>제품소개</span><br />
+							도드람바이오에서 취급하는<br />
+							제품들을 소개합니다.
+						</div>
 					</div>
 				</div>
 			</div>

@@ -5,6 +5,6 @@
 
 <mapper namespace="com.dodram_hebron.mappers.memberMapper">
 	<select id="selectMember" resultType="memberVO">
-		SELECT ID, NAME FROM TEST_TABLE
+		SELECT ID, NAME FROM test_table
 	</select>
 </mapper>

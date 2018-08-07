@@ -9,4 +9,9 @@ $(document).ready(function() {
 	  	$('.nav-bg').stop();
 		$(".nav-bg").fadeOut(300);
 	});
+	
+	// slider event
+	$('.slider').bxSlider({
+		auto: true
+	});
 });

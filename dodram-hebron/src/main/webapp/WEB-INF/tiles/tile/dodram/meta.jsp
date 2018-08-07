@@ -12,10 +12,15 @@
 <link rel="stylesheet" href="/resources/css/dodram/nav.css">
 <link rel="stylesheet" href="/resources/css/dodram/footer.css">
 <link rel="stylesheet" href="/resources/css/dodram/dodram.css">
+<link rel="stylesheet" href="/resources/css/dodram/jquery.bxslider.css">
 
 <!-- WEB-FONT -->
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:800|Raleway" rel="stylesheet">
 
 <!-- JS -->
 <script src="/resources/js/jquery_min_v311.js"></script>
+<script src="/resources/js/dodram/jquery.bxslider.js"></script>
 <script src="/resources/js/dodram/dodram.js"></script>
+
+<!-- TITLE -->
+<title>Dodrambio</title>

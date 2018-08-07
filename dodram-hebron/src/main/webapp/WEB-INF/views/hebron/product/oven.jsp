@@ -16,7 +16,7 @@
 		<div class="intro-company-introduce2">
 			<div class="sub-title">반도체 장비 BAKE OVEN 판금 제작</div>
 			<div class="slider">
-				<div><img src="/resources/src/images/img-oven-01.webp"></div>
+				<div><img src="/resources/src/images/img-oven-01.png"></div>
 			</div>
 			<p>
 				01. SUS 오븐제작<br />

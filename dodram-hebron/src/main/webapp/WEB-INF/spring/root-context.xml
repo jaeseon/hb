@@ -16,20 +16,20 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
 		<property name="url"
-			value="jdbc:log4jdbc:mysql://127.0.0.1:3306/test_db?useSSL=false&amp;serverTimezone=UTC">
+			value="jdbc:log4jdbc:mysql://localhost:3306/dodrambio?useSSL=false&amp;serverTimezone=UTC">
 		</property>
-		<property name="username" value="scott"></property>
-		<property name="password" value="tiger"></property>
+		<property name="username" value="dodrambio"></property>
+		<property name="password" value="bPM4b13K8sQl"></property>
 	</bean>
 	
-	<!-- mybatis SqlSessionFactoryBean -->
+	<!-- myBatis SqlSessionFactoryBean -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"></property>
 		<property name="configLocation" value="classpath:/mybatis-config.xml"></property>
 		<property name="mapperLocations" value="classpath:mappers/**/*Mapper.xml"></property>
 	</bean>
 	
-	<!-- mybatis SqlSessionTemplate -->
+	<!-- myBatis SqlSessionTemplate -->
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate" destroy-method="clearCache">
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
 	</bean>

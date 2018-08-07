@@ -14,24 +14,24 @@
 		
 		<div class="intro-company-introduce2" style="padding-bottom: 20px;">
 			<div class="production-container">
-				<div><img src="/resources/src/images/img-production-01.webp"></div>
-				<div><img src="/resources/src/images/img-production-02.webp"></div>
+				<div><img src="/resources/src/images/img-production-01.png"></div>
+				<div><img src="/resources/src/images/img-production-02.png"></div>
 			</div>
 			<div class="production-container">
-				<div><img src="/resources/src/images/img-production-03.webp"></div>
-				<div><img src="/resources/src/images/img-production-04.webp"></div>
+				<div><img src="/resources/src/images/img-production-03.png"></div>
+				<div><img src="/resources/src/images/img-production-04.png"></div>
 			</div>
 			<div class="production-container">
-				<div><img src="/resources/src/images/img-production-05.webp"></div>
-				<div><img src="/resources/src/images/img-production-06.webp"></div>
+				<div><img src="/resources/src/images/img-production-05.png"></div>
+				<div><img src="/resources/src/images/img-production-06.png"></div>
 			</div>
 			<div class="production-container">
-				<div><img src="/resources/src/images/img-production-07.webp"></div>
-				<div><img src="/resources/src/images/img-production-08.webp"></div>
+				<div><img src="/resources/src/images/img-production-07.png"></div>
+				<div><img src="/resources/src/images/img-production-08.png"></div>
 			</div>
 			<div class="production-container">
-				<div><img src="/resources/src/images/img-production-09.webp"></div>
-				<div><img src="/resources/src/images/img-production-10.webp"></div>
+				<div><img src="/resources/src/images/img-production-09.png"></div>
+				<div><img src="/resources/src/images/img-production-10.png"></div>
 			</div>
 		</div>
 		

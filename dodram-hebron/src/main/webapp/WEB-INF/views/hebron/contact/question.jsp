@@ -16,7 +16,7 @@
 		</div>
 		<div class="intro-company-introduce2">
 			<div class="question-form-container">
-				<form action="" method="post">
+				<form action="" method="post" onsubmit="javascript:alert('기능 테스트 중입니다.\n'); return false;">
 					<div><img src="/resources/src/images/Icon-user.png"><input type="text" placeholder="이름(회사)"/></div>
 					<div><img src="/resources/src/images/Icon-mail.png"><input type="email" placeholder="보내는 분 E-mail"/></div>
 					<div><img src="/resources/src/images/Icon-tel.png"><input type="text" placeholder="연락처 (ex: 01012345678)"/></div>

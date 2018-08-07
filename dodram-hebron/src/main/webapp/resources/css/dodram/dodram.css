@@ -1,13 +1,30 @@
 @charset "UTF-8";
 
+body {
+	font-family: "맑은 고딕";
+}
 .wrap {
 	width: 100%;
 	min-height: 920px;
 	background-color: #f5f5f5;
+	padding-top: 103px;
 }
 .container {
 	width: 1170px;
 	margin: 0 auto;
+}
+.section {
+	min-width: 1170px;
+	background-image: url("/resources/src/images/img-background.png");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.article {
+	width: 1100px;
+	min-height: 1000px;
+	margin: 0 auto;
+	padding-top: 104px;
+	font-size: 0;
 }
 .big-box-wrap {
 	display: flex;
@@ -36,6 +53,9 @@
 .big-box-container:NTH-CHILD(2) {
 	height: 430px;
 }
+.big-box-container:last-child {
+	height: 430px;
+}
 .big-box:before {
 	position: absolute;
 	top: 0;
@@ -58,14 +78,29 @@
 	margin-right: 6px;
 }
 .intro {
-	background: url("/resources/src/images/img-dodram-main02.png") 50%;
+	background: url("/resources/src/images/img-dodram-main02.jpg") 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.intro .box-text {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 26px;
+	line-height: 28px;
 }
 .operation {
-	background: url("/resources/src/images/img-dodram-main01.jpg") 50%;
-	background-size: cover;
+	background: url("/resources/src/images/img-dodram-main03.png") 50% 130%;
+	background-size: 170%;
 	background-repeat: no-repeat;
+	background-color: #efefef;
+}
+.operation .box-text {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 26px;
+	line-height: 28px;
+	color: #333;
 }
 .ms-box-container {
 	display: flex;
@@ -73,37 +108,597 @@
 }
 .ms-box {
 	flex: 1;
+	background-color: #fff;
 }
 .ms-box-container > .ms-box:nth-child(1) {
 	margin-right: 6px;
 	margin-bottom: 6px;
-	background-color: #aaa;
 }
 .ms-box-container > .ms-box:nth-child(2) {
 	margin-bottom: 6px;
-	background-color: #bbb;
+}
+.oper {
+	position: relative;
+	background: url("/resources/src/images/img-dodram-main06.jpg") 59%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+.oper:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(146, 146, 146, .25);
+	z-index: -1;
+	content: "";
+}
+.oper span {
+	display: inline-block;
+	margin-bottom: 18px;
+	font-size: 24px;
+	font-weight: 400;
+	color: #000;
+}
+.oper .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 26px;
+	color : #000;
+}
+.mark {
+	background: url("/resources/src/images/logo-dodram.jpg") 50% 85%;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+.mark .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+	padding: 14px 26px;
+	color : #333;
+}
+.mark span {
+	color: #49b845;
+}
+.noti {
+	position: relative;
+	background-image: url("/resources/src/images/img-dodram-main09.jpg");
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-position: 100% 100%;
+	background-size: 60%;
+	cursor: pointer;
+}
+.noti span {
+	display: inline-block;
+	margin-bottom: 18px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #000;
+}
+.noti .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 26px;
+	color : #333;
+}
+.notice-more-container {
+	position: absolute;
+	top: 24px;
+	right: 34px;
+	width: 28px;
+	height: 28px;
+	content: "";
+	cursor: pointer;
+}
+.notice-more {
+	position: absolute;
+	border-radius: 12px;
+	background-color: #333;
+	content: "";
+}
+.notice-more:nth-of-type(1) {
+	width: 22px;
+	height: 4px;
+	top: 14px;
+	right: 0;
+}
+.notice-more:nth-of-type(2) {
+	width: 4px;
+	height: 22px;
+	top: 5px;
+	right: 9px;
+}
+.info {
+	position: relative;
+	background: url("/resources/src/images/img-dodram-main07.jpg") 85%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+.info .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 26px;
+	color : #fff;
+}
+.info span {
+	display: inline-block;
+	margin-bottom: 18px;
+	font-size: 24px;
+	font-weight: 400;
+}
+.info:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(74, 86, 66, .25);
+	z-index: -1;
+	content: "";
 }
 .middle-box-container {
 	display: flex;
 	height: 50%;
 	margin-top: 1%;
 }
-/* .middle-box1 {
-	height: 100%;
-	background-color: #555;
-	margin-right: 1%;
+.box-container {
+	display: flex;
+	height: 416px;
 }
 .middle-box2 {
+	flex: 1;
+	height: 100%;
+	margin-right: 6px;
+	background-color: #fff;
+}
+.middle-box2:nth-child(2) {
 	position: relative;
 	height: 90%;
-	background-color: #999;
+	background-color: #aaa;
+	margin: 0;
 }
-.middle-box2:after {
+.middle-box2:nth-child(2):after {
 	position: absolute;
-	bottom: -12%;
+	bottom: -42px;
 	left: 0;
 	width: 100%;
-	height: 10%;
-	background-color: #aaa;
+	height: 37px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	padding: 4px 20px;
+	content: "Contact us";
+	box-sizing: border-box;
+	background-color: #555;
+	cursor: pointer;
+}
+.business {
+	background-image: url("/resources/src/images/img-dodram-main05.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+.business span {
+	display: inline-block;
+	margin-bottom: 26px;
+	font-size: 24px;
+	font-weight: 400;
+}
+.business .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 46px 26px;
+	color : #333;
+}
+.product {
+	background: url("/resources/src/images/img-dodram-main08.jpg") 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	z-index: 1;
+}
+.product .box-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 46px 26px;
+	color : #fff;
+}
+.product span {
+	display: inline-block;
+	margin-bottom: 26px;
+	font-size: 24px;
+	font-weight: 400;	
+}
+.product:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	z-index: -1;
 	content: "";
-} */
+}
+.product-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background: url("/resources/src/images/bg-product.jpg") 85% -1% no-repeat;
+}
+.intro-text {
+	padding: 50px 0 0 80px;
+	font-size: 13px;
+}
+.intro-title {
+	font-size: 34px;
+	font-weight: 600;
+	color: #B23333;
+	padding-bottom: 40px;
+	letter-spacing: -1px;
+}
+.intro-company-introduce1 {
+	line-height: 20px;
+	color: #555;
+}
+.intro-company-introduce1 > span {
+	font-size: 20px;
+	color: #3386B2;
+	letter-spacing: -1px;
+}
+.intro-company-introduce1 > p {
+	padding-top: 12px;
+	color: #848484;
+}
+.intro-company-introduce2 {
+	line-height: 22px;
+	padding-top: 50px;
+	font-size: 14px;
+}
+.intro-company-introduce2 > p:NTH-CHILD(2) {
+	padding: 20px 0;
+} 
+.intro-company-introduce2 b {
+	font-weight: 600;
+	color: #3386B2;
+}
+.intro-company-introduce2 span {
+	color: #B23333;
+}
+.intro-company-introduce2 img {
+	width: 100%;
+}
+.sub-title {
+	font-size: 24px;
+	font-weight: 600;
+	padding-bottom: 14px;
+}
+.sub-title ~ p {
+	padding: 14px 8px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.title-box {
+	display: inline-block;
+	width: 15%;
+	margin: 16px 12px 0 0;
+	padding: 10px 8px;
+	background-color: #3e6cad;
+	text-align: center;
+	color: #fff;
+}
+.contents-box {
+	display: inline-block;
+	width: 80%;
+	vertical-align: middle;
+	font-size: 13px;
+	padding: 6px 0;
+}
+.p-explication {
+	margin-top: 20px;
+	line-height: 24px;
+	text-align: justify;
+}
+.ferti-table {
+	width: 100%;
+	border: 1px solid #3386B2;
+}
+.ferti-table > tbody > tr {
+	border: 1px solid #3386B2;
+	font-size: 12px;
+}
+.ferti-table > tbody > tr > th {
+	padding: 6px 0;
+	font-size: 14px;
+	color: #fff;
+	background-color: #3386B2;
+}
+.ferti-table > tbody > tr > th:nth-of-type(1) {
+	width: 15%;
+}
+.ferti-table > tbody > tr > th:nth-of-type(2) {
+	width: 42.5%;
+}
+.ferti-table > tbody > tr > td:nth-of-type(1) {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 600;
+}
+.ferti-table ul {
+	list-style: disc;
+	margin-left: 26px;
+}
+.ferti-table ul > li {
+	line-height: 32px;
+}
+.base-img {
+	position: relative;
+	width: 447px;
+	height: 376px;
+	background-image: url("/resources/src/images/img-dodram-product13.png");
+	background-repeat: no-repeat;
+	margin: 175px 260px 0;
+}
+.base-img:after {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	width: 220px;
+	height: 40px;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+	content: "교반, 혼합, 반응";
+}
+.base-img > div {
+	position: absolute;
+	width: 170px;
+	height: 140px;
+	color: #3386B2;
+	font-weight: 600;
+	background-repeat: no-repeat;
+}
+.base-img > div:nth-of-type(1) {
+	top: -145px;
+	left: -175px;
+	background-image: url("/resources/src/images/img-dodram-product14.png");
+}
+.base-img > div:nth-of-type(1):after {
+	position: absolute;
+	top: -24px;
+	left: 0;
+	width: 200px;
+	content: "톱밥 (20%)";
+}
+.base-img > div:nth-of-type(2) {
+	top: -145px;
+	left: 0px;
+	background-image: url("/resources/src/images/img-dodram-product15.png");
+}
+.base-img > div:nth-of-type(2):after {
+	position: absolute;
+	top: -24px;
+	left: 0;
+	width: 200px;
+	content: "생석회 (15%)";
+}
+.base-img > div:nth-of-type(3) {
+	top: 0;
+	left: -175px;
+	background-image: url("/resources/src/images/img-dodram-product16.png");
+}
+.base-img > div:nth-of-type(3):after {
+	position: absolute;
+	bottom: -24px;
+	left: 0;
+	width: 200px;
+	content: "동물사체";
+}
+
+.base-img2 {
+	position: relative;
+	width: 322px;
+	height: 500px;
+	background-image: url("/resources/src/images/img-dodram-product18.png");
+	margin: 175px 260px 0;
+}
+.base-img2:after {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	width: 180px;
+	height: 40px;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 28px;
+	content: "이동식 처리설비 (교반, 혼합, 반응)";
+}
+.base-img2 > div {
+	position: absolute;
+	width: 170px;
+	height: 140px;
+	color: #3386B2;
+	font-weight: 600;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.base-img2 > div:nth-of-type(1) {
+	top: -145px;
+	left: -175px;
+	background-image: url("/resources/src/images/img-dodram-product19.png");
+}
+.base-img2 > div:nth-of-type(1):after {
+	position: absolute;
+	top: -24px;
+	left: 0;
+	width: 200px;
+	content: "매립사체";
+}
+.base-img2 > div:nth-of-type(2) {
+	top: -145px;
+	left: 0px;
+	background-image: url("/resources/src/images/img-dodram-product20.png");
+	background-position: 50%;
+}
+.base-img2 > div:nth-of-type(2):after {
+	position: absolute;
+	top: -24px;
+	left: 0;
+	width: 200px;
+	content: "매립사체";
+}
+.base-img2 > div:nth-of-type(3) {
+	top: 0;
+	left: -175px;
+	background-image: url("/resources/src/images/img-dodram-product14.png");
+}
+.base-img2 > div:nth-of-type(3):after {
+	position: absolute;
+	bottom: -24px;
+	left: 0;
+	width: 200px;
+	content: "톱밥";
+}
+.base-img2 > div:nth-of-type(4) {
+	top: 167px;
+	left: -175px;
+	background-image: url("/resources/src/images/img-dodram-product15.png");
+	background-repeat: no-repeat;
+}
+.base-img2 > div:nth-of-type(4):after {
+	position: absolute;
+	bottom: -24px;
+	left: 0;
+	width: 200px;
+	content: "생석회";
+}
+.base-img2 + div {
+	position: relative;
+	width: 430px;
+	height: 500px;
+	margin: 40px auto 90px;
+}
+.base-img2 + div:after {
+	position: absolute;
+	bottom: -34px;
+	right: 0;
+	font-weight: 600;
+	font-size: 24px;
+	content: "퇴비 생산";
+}
+.base-img2 + div > img {
+	height: 100%;
+	border-radius: 8px;
+	border: 1px solid #3386B2;
+}
+.flex-box {
+	display: flex;
+}
+.flex-box:last-child {
+	padding-bottom: 50px;
+}
+.flex-contents {
+	position: relative;
+	flex: 1;
+	margin: 0 8px 40px;
+}
+.flex-contents:after {
+	position: absolute;
+	font-weight: 600;
+	font-size: 18px;
+	bottom: -28px;
+	right: 0;
+}
+.flex1:after {
+	content: "LAZER L-3030S, TRUMPF";	
+}
+.flex2:after {
+	content: "NCT VIPROS357[ATC], AMADA";
+}
+.flex3:after {
+	content: "절곡";
+}
+.flex4:after {
+	content: "분체도장";
+}
+.flex5:after {
+	content: "연구 설계";
+}
+.flex6:after {
+	content: "판매 관리";
+}
+.flex-contents > img {
+	height: 100%;
+}
+.contact-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background: url("/resources/src/images/bg-contact.jpg") 85% -7% no-repeat;
+}
+.question-form-container {
+	width: 500px;
+	border: 1px solid #3386B2;
+	border-radius: 12px;
+	margin: 30px auto 0;
+	padding: 12px 18px;
+	box-shadow: 0 0 3px #000;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, .6);
+}
+.question-form-container > form > div {
+	padding: 14px 0;
+}
+.question-form-container > form > div img {
+	width: 24px;
+	height: 24px;
+	border: 0;
+	padding: 0 20px 0 15px;
+	vertical-align: middle;
+}
+.question-form-container > form input[type=text], .question-form-container > form input[type=email] {
+	width: 70%;
+	font-size: 12px;
+	border: 0;
+	padding: 7px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.contents-area {
+	width: 73%;
+	border: 1px solid #ccc;
+	padding: 7px 10px;
+	font-size: 12px;
+	box-sizing: border-box;
+	resize: none;
+	overflow: hidden;
+}
+.address-table-container > table {
+	width: 100%;
+	border-top: 1px solid #000;
+}
+.address-table-container > table tr > td:first-child {
+	text-align: center;
+	background-color: #fafafa;
+	font-weight: 600;
+}
+.address-table-container > table td {
+	font-size: 12px;
+	padding: 4px 10px;
+	border-bottom: 1px solid #e1e1e1;
+}
+#map {
+	height: 600px;
+	margin: 60px 0;
+}
