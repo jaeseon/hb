@@ -1,7 +1,5 @@
 package com.dodram_hebron.controller;
 
-import java.util.List;
-
 /*
  * 도드람바이오, 헤브론테크 홈페이지 개발
  * Date: 2018-07-07
@@ -10,23 +8,15 @@ import java.util.List;
 
 import java.util.Locale;
 
-import javax.inject.Inject;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import com.dodram_hebron.service.MemberService;
-import com.dodram_hebron.vo.MemberVO;
 
 @Controller
 public class SiteMoveController {
-	
-	@Inject
-	private MemberService service;
 	
 	/* 
 	 * 메인
@@ -146,30 +136,13 @@ public class SiteMoveController {
 	 */ 
 	@RequestMapping(value ="/myOffice")
 	public String admin_index(HttpSession session) {
-		session.setAttribute("Roster_Code", (String) "20180807_8674");
+		String adminLogin = (String) session.getAttribute("admin-login");
 		
-		String rosterCode = (String) session.getAttribute("Roster_Code");
-		
-		if (rosterCode == null || rosterCode.equals("")) {
+		if (adminLogin == null || adminLogin.equals("")) {
 			return "/myOffice/login/index";
 		} else {
 			return "/myOffice/index";
 		}
-	}
-	
-	@RequestMapping(value ="/loginCheck")
-	public void admin_loginCheck(@RequestParam(required=true) String code) {
-		
-	}
-	
-	@RequestMapping(value="testest")
-	public String testest(Model model) throws Exception {
-		
-		List<MemberVO> memberList = service.selectMember();
-		
-		model.addAttribute("memberList", memberList);
-		
-		return "test";
 	}
 	
 }

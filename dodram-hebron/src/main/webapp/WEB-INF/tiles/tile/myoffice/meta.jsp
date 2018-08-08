@@ -8,7 +8,6 @@
 <!-- CSS -->
 <link rel="stylesheet" href="/resources/css/common.css">
 <link rel="stylesheet" href="/resources/css/myoffice/header.css">
-<link rel="stylesheet" href="/resources/css/myoffice/footer.css">
 <link rel="stylesheet" href="/resources/css/myoffice/myoffice.css">
 
 <!-- WEB-FONT -->
@@ -16,6 +15,7 @@
 
 <!-- JS -->
 <script src="/resources/js/jquery_min_v311.js"></script>
+<script src="/resources/js/myoffice/myoffice.js"></script>
 
 <!-- TITLE -->
 <title>Dodrambio ADMIN</title>
