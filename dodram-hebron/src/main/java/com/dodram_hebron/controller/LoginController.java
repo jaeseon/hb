@@ -1,5 +1,6 @@
 package com.dodram_hebron.controller;
 
+import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.http.HttpServletResponse;
@@ -56,9 +57,9 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value ="/admin_logout")
-	public String admin_logout(HttpSession session) {
+	public void admin_logout(HttpSession session, HttpServletResponse response) throws IOException {
 		session.removeAttribute("admin-login");
 		
-		return "myOffice/index";
+		response.sendRedirect("myOffice");
 	}
 }

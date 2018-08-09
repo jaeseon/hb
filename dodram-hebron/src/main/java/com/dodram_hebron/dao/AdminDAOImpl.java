@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.dodram_hebron.vo.AdminVO;
+import com.dodram_hebron.vo.ContactBoardVO;
 
 @Repository
 public class AdminDAOImpl implements AdminDAO {
@@ -19,5 +20,10 @@ public class AdminDAOImpl implements AdminDAO {
 	@Override
 	public List<AdminVO> selectAdminAcount(String id) throws Exception {
 		return sqlSession.selectList(Namespace + ".selectAdminAcount", id);
+	}
+
+	@Override
+	public List<ContactBoardVO> selectContactBoard() throws Exception {
+		return sqlSession.selectList(Namespace + ".selectContactBoard");
 	}
 }

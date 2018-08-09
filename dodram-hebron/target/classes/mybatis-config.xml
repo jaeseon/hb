@@ -6,5 +6,6 @@
 	<typeAliases>
 		<typeAlias alias="adminVO" type="com.dodram_hebron.vo.AdminVO" />
 		<typeAlias alias="memberVO" type="com.dodram_hebron.vo.MemberVO" />
+		<typeAlias alias="contactBoardVO" type="com.dodram_hebron.vo.ContactBoardVO" />
 	</typeAliases>
 </configuration>

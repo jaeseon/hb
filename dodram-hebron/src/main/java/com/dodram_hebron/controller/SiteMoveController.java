@@ -1,5 +1,7 @@
 package com.dodram_hebron.controller;
 
+import java.util.List;
+
 /*
  * 도드람바이오, 헤브론테크 홈페이지 개발
  * Date: 2018-07-07
@@ -10,13 +12,21 @@ import java.util.Locale;
 
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.dodram_hebron.service.AdminService;
+import com.dodram_hebron.vo.ContactBoardVO;
 
 @Controller
 public class SiteMoveController {
+	
+	@Autowired
+	AdminService service;
 	
 	/* 
 	 * 메인
@@ -134,7 +144,7 @@ public class SiteMoveController {
 	/*
 	 * 관리자 페이지 
 	 */ 
-	@RequestMapping(value ="/myOffice")
+	@RequestMapping(value = "/myOffice")
 	public String admin_index(HttpSession session) {
 		String adminLogin = (String) session.getAttribute("admin-login");
 		
@@ -143,6 +153,18 @@ public class SiteMoveController {
 		} else {
 			return "/myOffice/index";
 		}
+	}
+	
+	@RequestMapping(value = "/myOffice/board/QA")
+	public ModelAndView admin_board() {
+		List<ContactBoardVO> list =  service.boardList();
+				
+		ModelAndView mav = new ModelAndView();
+		
+		mav.addObject("ContactBoardList", list);
+		mav.setViewName("/myOffice/board/QA/index");
+		
+		return mav;
 	}
 	
 }

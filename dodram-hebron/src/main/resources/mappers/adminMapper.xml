@@ -9,4 +9,10 @@
 		  FROM ROSTER_INFO
 		 WHERE ROSTER_ID = #{id}
 	</select>
+	
+	<select id="selectContactBoard" resultType="contactBoardVO">
+		SELECT *
+		  FROM CONTACT_BOARD
+	  ORDER BY CONTACT_PKID DESC
+	</select>
 </mapper>
