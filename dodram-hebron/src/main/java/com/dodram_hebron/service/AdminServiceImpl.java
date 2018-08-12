@@ -55,4 +55,12 @@ public class AdminServiceImpl implements AdminService {
 		
 		return null;
 	}
+
+	@Override
+	public void insertContactBoard() {
+		adminDAO.insertContactBoard(new ArrayList());
+		
+		
+	}
+	
 }

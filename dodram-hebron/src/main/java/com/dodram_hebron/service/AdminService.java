@@ -7,4 +7,5 @@ import com.dodram_hebron.vo.ContactBoardVO;
 public interface AdminService {
 	public int loginCheckProcess(String id, String pw) throws Exception;
 	public List<ContactBoardVO> boardList();
+	public void insertContactBoard();
 }

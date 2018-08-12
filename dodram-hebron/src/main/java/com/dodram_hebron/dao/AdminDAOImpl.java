@@ -1,5 +1,6 @@
 package com.dodram_hebron.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -26,4 +27,9 @@ public class AdminDAOImpl implements AdminDAO {
 	public List<ContactBoardVO> selectContactBoard() throws Exception {
 		return sqlSession.selectList(Namespace + ".selectContactBoard");
 	}
+	
+	public void insertContactBoard(ArrayList<ContactBoardVO> list) {
+		sqlSession.insert(Namespace + ".insertContactBoard", list);
+	}
 }
+

@@ -15,4 +15,10 @@
 		  FROM CONTACT_BOARD
 	  ORDER BY CONTACT_PKID DESC
 	</select>
+	
+	<insert id="insertContactBoard" parameterType="contactBoardVO">
+		INSERT INTO
+			CONTACT_BOARD(USER_NAME, USER_EMAIL, USER_QUES, REG_DATE, MAIL_YN, ANSW, ANSW_DATE)
+	    VALUES(#{USER_NAME}, #{USER_EMAIL}, #{USER_QUES}, #{REG_DATE}, 'N', '', '1900-01-01')
+	</insert>
 </mapper>
