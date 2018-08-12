@@ -25,6 +25,12 @@
 			<div class="container-logo">
 				<a href="/dodram"><img src="/resources/src/images/logo-dodram.jpg"></a>
 			</div>
+			<div class="container-logo2">
+				<a href="/dodram">
+					<span class="logo-text1">도드람</span><br />
+					<span class="logo-text2">바이오</span>
+				</a>
+			</div>
 			<div class="menu-header-2">
 				<ul>
 					<li><a href="/dodram">HOME</a></li><!--

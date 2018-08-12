@@ -45,6 +45,7 @@
 	margin: 0 auto;
 }
 .container-logo {
+	display: inline-block;
 	width: 80px;	
 }
 .container-logo > a {
@@ -52,6 +53,21 @@
 }
 .container-logo > a > img {
 	width: 100%;
+}
+.container-logo2 {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 24px;
+	font-weight: 700;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.logo-text1 {
+	color: #555;
+}
+.logo-text2 {
+	color: #52b349;
+	padding-left: 20px;
 }
 .nav-bg {
 	position: absolute;
