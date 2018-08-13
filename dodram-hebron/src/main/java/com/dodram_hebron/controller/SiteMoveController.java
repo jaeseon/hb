@@ -44,10 +44,6 @@ public class SiteMoveController {
 	public String dodram_home() {
 		return "/dodram/index";
 	}
-	@RequestMapping(value = "/dodram/f_product")
-	public String dodram_toilet() {
-		return "/dodram/product/toilet";
-	}
 	@RequestMapping(value = "/dodram/s_product")
 	public String dodram_water() {
 		return "/dodram/product/water";

@@ -25,6 +25,12 @@
 			<div class="container-logo">
 				<a href="/dodram"><img src="/resources/src/images/logo-dodram.jpg"></a>
 			</div>
+			<div class="container-logo2">
+				<a href="/dodram">
+					<span class="logo-text1">도드람</span><br />
+					<span class="logo-text2">바이오</span>
+				</a>
+			</div>
 			<div class="menu-header-2">
 				<ul>
 					<li><a href="/dodram">HOME</a></li><!--
@@ -44,9 +50,8 @@
 						</ul>
 					</li><!--
 					--><li>
-						<a href="/dodram/f_product">제품소개</a>
+						<a href="/dodram/s_product">제품소개</a>
 						<ul class="nav-depth">
-							<li><a href="/dodram/f_product">용강환보 화장실</a></li>
 							<li><a href="/dodram/s_product">수처리 시스템</a></li>
 							<li><a href="/dodram/t_product">구제역 사체 비료화</a></li>
 							<li><a href="/dodram/o_product">음식물 분리기</a></li>
