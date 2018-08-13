@@ -3,6 +3,7 @@ package com.dodram_hebron.service;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,6 +31,7 @@ public class AdminServiceImpl implements AdminService {
 			// 사용자가 입력한 패스워드가 관리자 패스워드면(로그인 성공)
 			if (pw.equals(rosterPW)) {
 				return 2;
+				
 			}
 		}
 		
@@ -57,10 +59,8 @@ public class AdminServiceImpl implements AdminService {
 	}
 
 	@Override
-	public void insertContactBoard() {
-		adminDAO.insertContactBoard(new ArrayList());
-		
-		
+	public void insertContactBoard(Map<String, Object> list) {
+		adminDAO.insertContactBoard(list);
 	}
 	
 }

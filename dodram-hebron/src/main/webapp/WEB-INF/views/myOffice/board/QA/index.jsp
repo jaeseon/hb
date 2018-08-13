@@ -3,10 +3,6 @@
 <%@ page import="java.util.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<%
-	// List<ContactBoardVO> contactBoardList = (ArrayList) request.getAttribute("ContactBoardList");
-%>
-
 <div class="container">
 	<div class="big-box-container">
 		<div class="big-box-title">문의하기</div>
@@ -27,8 +23,9 @@
 							<img src="/resources/src/images/img-avatar.png">
 						</div>
 						<div class="info-box">
-							<span>${ boardList.user_name }</span><br />
-							<span>${ boardList.reg_date }</span><br />
+							<span>${ boardList.user_name } </span><br />
+							<span>${ boardList.reg_date }</span> ---
+							<span>${ boardList.type }</span><br />
 							<p>
 								${ boardList.user_ques }
 							</p>
