@@ -21,6 +21,7 @@
 <script src="/resources/js/jquery_min_v311.js"></script>
 <script src="/resources/js/hebron/jquery.bxslider.js"></script>
 <script src="/resources/js/hebron/hebron.js"></script>
+<script src="/resources/js/common/common.js"></script>
 
 <!-- TITLE -->
 <title>Hebrontech</title>

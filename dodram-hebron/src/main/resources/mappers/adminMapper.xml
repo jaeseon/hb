@@ -6,19 +6,19 @@
 <mapper namespace="com.dodram_hebron.mappers.adminMapper">
 	<select id="selectAdminAcount" resultType="adminVO" parameterType="String">
 		SELECT *
-		  FROM ROSTER_INFO
-		 WHERE ROSTER_ID = #{id}
+		  FROM Roster_info
+		 WHERE Roster_ID = #{id}
 	</select>
 	
 	<select id="selectContactBoard" resultType="contactBoardVO">
 		SELECT *
-		  FROM CONTACT_BOARD
-	  ORDER BY CONTACT_PKID DESC
+		  FROM Contact_board
+	  ORDER BY Contact_PKID DESC
 	</select>
 	
-	<insert id="insertContactBoard" parameterType="contactBoardVO">
-		INSERT INTO
-			CONTACT_BOARD(USER_NAME, USER_EMAIL, USER_QUES, REG_DATE, MAIL_YN, ANSW, ANSW_DATE)
-	    VALUES(#{USER_NAME}, #{USER_EMAIL}, #{USER_QUES}, #{REG_DATE}, 'N', '', '1900-01-01')
+	<insert id="insertContactBoard" parameterType="java.util.Map">
+		INSERT INTO 
+			Contact_board(User_Name, User_Email, User_Tel, User_Title, User_Ques, Mail_YN, Type) 
+		VALUES(#{name}, #{email}, #{tel}, #{title}, #{contents}, 'N', #{type})
 	</insert>
 </mapper>

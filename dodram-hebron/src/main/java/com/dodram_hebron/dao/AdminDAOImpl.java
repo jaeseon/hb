@@ -1,7 +1,7 @@
 package com.dodram_hebron.dao;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,8 +27,9 @@ public class AdminDAOImpl implements AdminDAO {
 	public List<ContactBoardVO> selectContactBoard() throws Exception {
 		return sqlSession.selectList(Namespace + ".selectContactBoard");
 	}
-	
-	public void insertContactBoard(ArrayList<ContactBoardVO> list) {
+
+	@Override
+	public void insertContactBoard(Map<String, Object> list) {
 		sqlSession.insert(Namespace + ".insertContactBoard", list);
 	}
 }
