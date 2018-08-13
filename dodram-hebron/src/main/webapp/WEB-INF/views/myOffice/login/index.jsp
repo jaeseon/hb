@@ -97,9 +97,9 @@
 				</div>
 				<hr>
 				<div class="cover-bottom">
-					<form action="" method="post">
-						<input type="text" placeholder="ID">
-						<input type="password" placeholder="Password">
+					<form action="/loginCheck" method="post">
+						<input type="text" name="id" placeholder="ID">
+						<input type="password" name="password" placeholder="Password">
 						<input type="submit" value="login">
 					</form>
 				</div>

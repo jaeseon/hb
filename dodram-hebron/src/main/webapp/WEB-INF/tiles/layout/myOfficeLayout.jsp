@@ -8,8 +8,16 @@
 	<tiles:insertAttribute name="meta" />
 </head>
 <body>
+	<%
+		String adminLogin = (String) session.getAttribute("admin-login");
+		
+		if (adminLogin == null || adminLogin.equals("")) {
+			response.sendRedirect("/myOffice");
+			
+			return;
+		}
+	%>
 	<tiles:insertAttribute name="header"/>
 	<tiles:insertAttribute name="contents"/>
-	<tiles:insertAttribute name="footer"/>
 </body>
 </html>

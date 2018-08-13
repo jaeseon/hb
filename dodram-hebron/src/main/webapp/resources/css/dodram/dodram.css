@@ -651,7 +651,7 @@ body {
 .question-form-container {
 	width: 500px;
 	border: 1px solid #3386B2;
-	border-radius: 12px;
+	border-radius: 6px;
 	margin: 30px auto 0;
 	padding: 12px 18px;
 	box-shadow: 0 0 3px #000;

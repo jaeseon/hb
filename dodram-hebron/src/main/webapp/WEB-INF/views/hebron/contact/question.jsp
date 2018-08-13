@@ -16,15 +16,17 @@
 		</div>
 		<div class="intro-company-introduce2">
 			<div class="question-form-container">
-				<form action="" method="post" onsubmit="javascript:alert('기능 테스트 중입니다.\n'); return false;">
-					<div><img src="/resources/src/images/Icon-user.png"><input type="text" placeholder="이름(회사)"/></div>
-					<div><img src="/resources/src/images/Icon-mail.png"><input type="email" placeholder="보내는 분 E-mail"/></div>
-					<div><img src="/resources/src/images/Icon-tel.png"><input type="text" placeholder="연락처 (ex: 01012345678)"/></div>
-					<div><img src="/resources/src/images/Icon-title.png"><input type="text" placeholder="제목"/></div>
+				<form action="/sendQA" method="post">
+					<input type="hidden" name="hidden" value="hebron">
+					<div><img src="/resources/src/images/Icon-user.png"><input type="text" name="name" placeholder="이름(회사)"/></div>
+					<div><img src="/resources/src/images/Icon-mail.png"><input type="email" name="email" placeholder="보내는 분 E-mail"/></div>
+					<div><img src="/resources/src/images/Icon-tel.png"><input type="text" name="tel" placeholder="연락처 (ex: 01012345678)"/></div>
+					<div><img src="/resources/src/images/Icon-title.png"><input type="text" name="title" placeholder="제목"/></div>
 					<div>
 						<img src="/resources/src/images/Icon-contents.png" style="vertical-align: top;">
-						<textarea class="contents-area" rows="10" cols="16" placeholder="내용을 입력하세요."></textarea>
+						<textarea class="contents-area" rows="10" cols="16" name="contents" placeholder="내용을 입력하세요."></textarea>
 					</div>
+					
 					<div style="text-align: center;"><input type="submit" value="문의하기"></div>
 				</form>
 			</div>

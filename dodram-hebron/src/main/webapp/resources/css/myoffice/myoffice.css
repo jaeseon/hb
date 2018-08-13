@@ -1,11 +1,137 @@
 @charset "UTF-8";
 
-.header {
+h3 {
+	font-size: 26px;
+}
+.container {
 	width: 100%;
-	background-color: #0d2d4f;
-	margin-bottom: 20px;
+	padding: 26px 10px;
+	box-sizing: border-box;
 }
-.nav {
-	width: 1200px;
-	margin: 0 auto;
+.big-box-wrap {
+	display: flex;
+	margin: 20px 0;
 }
+.big-box-container {
+	flex: 1;
+	border: 1px solid #3386B2;
+	border-radius: 4px;
+	margin-right: 15px;
+}
+.big-box-title {
+	background-color: #337ab7;
+	color: #fff;
+	padding: 10px 14px;
+}
+.big-box-contents {
+	min-height: 700px;
+	padding: 10px;
+	overflow: auto;
+}
+.contents-items {
+	padding: 12px;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+<!-- 게시판- 문의하기 시작 -->
+.QA-items {
+	border: 2px solid #ff0000;
+	padding-bottom: 50px;
+}
+.QA-form select, .QA-form input[type=text] {
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	color: #555;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.QA-form select:focus, .QA-form input[type=text]:focus {
+	border-color: #66afe9;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.QA-form input[type=button] {
+	padding: 6px 16px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	border: 1px solid #4cae4c;
+	background-color: #5cb85c;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
+.QA-form input[type=button]:hover {
+	background-color: #449d44;	
+}
+.row-container {
+	position: relative;
+	padding: 19px 0 6px;
+	border-bottom: 1px solid #dedede;
+}
+.img-box {
+	display: inline-block;
+	width: 60px;
+	margin: 0 10px 10px 0;
+}
+.img-box > img {
+	width: 100%;
+}
+.info-box {
+	display: inline-block;
+	vertical-align: top;
+	font-weight: normal;
+	line-height: 23px;
+}
+.info-box > span:nth-of-type(1) {
+	font-size: 18px;
+}
+.info-box > span:nth-of-type(2) {
+	font-size: 12px;
+	font-style: italic;
+}
+.info-box > p {
+	font-size: 16px;
+	color: #ff0000;
+}
+.send-box {
+	border-top: 1px solid #efefef;
+	margin: 10px 0 0 75px;
+	padding: 10px 0;
+}
+.answer-form > textarea {
+	width: 100%;
+}
+.answer-form > input[type=button] {
+	padding: 6px 16px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	border: 1px solid #4cae4c;
+	background-color: #5cb85c;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	margin: 6px 0;
+}
+.answer-form > input[type=button]:hover {
+	background-color: #449d44;
+}
+.delete-btn {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	font-size: 14px;
+	padding: 10px 20px;
+	background-color: #d9534f;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
+.delete-btn:hover {
+	background-color: #c9302c;
+}
+<!-- 게시판- 문의하기 끝 -->

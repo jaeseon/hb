@@ -10,23 +10,23 @@ import java.util.List;
 
 import java.util.Locale;
 
-import javax.inject.Inject;
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
-import com.dodram_hebron.service.MemberService;
-import com.dodram_hebron.vo.MemberVO;
+import com.dodram_hebron.service.AdminService;
+import com.dodram_hebron.vo.ContactBoardVO;
 
 @Controller
 public class SiteMoveController {
 	
-	@Inject
-	private MemberService service;
+	@Autowired
+	AdminService service;
 	
 	/* 
 	 * 메인
@@ -43,10 +43,6 @@ public class SiteMoveController {
 	@RequestMapping(value = "/dodram")
 	public String dodram_home() {
 		return "/dodram/index";
-	}
-	@RequestMapping(value = "/dodram/f_product")
-	public String dodram_toilet() {
-		return "/dodram/product/toilet";
 	}
 	@RequestMapping(value = "/dodram/s_product")
 	public String dodram_water() {
@@ -144,32 +140,27 @@ public class SiteMoveController {
 	/*
 	 * 관리자 페이지 
 	 */ 
-	@RequestMapping(value ="/myOffice")
+	@RequestMapping(value = "/myOffice")
 	public String admin_index(HttpSession session) {
-		session.setAttribute("Roster_Code", (String) "20180807_8674");
+		String adminLogin = (String) session.getAttribute("admin-login");
 		
-		String rosterCode = (String) session.getAttribute("Roster_Code");
-		
-		if (rosterCode == null || rosterCode.equals("")) {
+		if (adminLogin == null || adminLogin.equals("")) {
 			return "/myOffice/login/index";
 		} else {
 			return "/myOffice/index";
 		}
 	}
 	
-	@RequestMapping(value ="/loginCheck")
-	public void admin_loginCheck(@RequestParam(required=true) String code) {
+	@RequestMapping(value = "/myOffice/board/QA")
+	public ModelAndView admin_board() {
+		List<ContactBoardVO> list =  service.boardList();
+				
+		ModelAndView mav = new ModelAndView();
 		
-	}
-	
-	@RequestMapping(value="testest")
-	public String testest(Model model) throws Exception {
+		mav.addObject("ContactBoardList", list);
+		mav.setViewName("/myOffice/board/QA/index");
 		
-		List<MemberVO> memberList = service.selectMember();
-		
-		model.addAttribute("memberList", memberList);
-		
-		return "test";
+		return mav;
 	}
 	
 }
