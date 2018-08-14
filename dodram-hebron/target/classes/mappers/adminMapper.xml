@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dodram_hebron.mappers.adminMapper">
+	<select id="selectAdminAcount" resultType="adminVO" parameterType="String">
+		SELECT *
+		  FROM Roster_info
+		 WHERE Roster_ID = #{id}
+	</select>
+	
+	<select id="selectContactBoard" resultType="contactBoardVO">
+		SELECT *
+		  FROM Contact_board
+	  ORDER BY Contact_PKID DESC
+	</select>
+	
+	<insert id="insertContactBoard" parameterType="java.util.Map">
+		INSERT INTO 
+			Contact_board(User_Name, User_Email, User_Tel, User_Title, User_Ques, Mail_YN, Type) 
+		VALUES(#{name}, #{email}, #{tel}, #{title}, #{contents}, 'N', #{type})
+	</insert>
+</mapper>

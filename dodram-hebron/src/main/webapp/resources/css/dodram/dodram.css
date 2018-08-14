@@ -328,6 +328,165 @@ body {
 	z-index: -1;
 	content: "";
 }
+.intro-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background: url("/resources/src/images/bg-company-intro.jpg") 85% -1% no-repeat;
+}
+.table-wrap {
+	text-align: center;
+	margin: 80px 0;
+}
+.table-wrap table {
+	width: 100%;
+}
+.table-wrap th {
+	background-color: #3386B2;
+	font-weight: 600;
+	color: #fff;
+	padding: 20px 0;
+}
+.table-wrap tr {
+	border: 1px solid #3386B2;
+}
+.table-wrap td {
+	vertical-align: middle;
+	padding: 15px 0;
+}
+.table-wrap td:nth-of-type(2) {
+	padding-left: 10px;
+	text-align: left;
+}
+.table-wrap tr > td:nth-of-type(1) {
+	width: 70px;
+}
+.tab-menu {
+	margin: 55px 0;
+	border-bottom: 2px solid #555;
+}
+.tab-menu > span {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 45px;
+	border: 1px solid #555;
+	border-bottom: none;
+	box-sizing: border-box;
+}
+.tab-menu a {
+	display: inline-block;
+	height: 45px;
+	padding: 0 50px;
+}
+.tab-menu .over {
+	background-color: #91a9ce;
+	box-shadow: 0 0 4px #999;
+}
+.tab-menu .over > a {
+	color: #fff;
+	font-weight: 600;
+}
+.tab-menu .nover {
+	background-color: #fff;
+}
+.tab-menu .nover > a {
+	color: #000;
+}
+.img-box {
+	position: relative;
+	margin-bottom: 55px;
+}
+.partner-imgbox1 {
+	text-align: center;
+}
+.partner-imgbox1 > img:nth-of-type(1) {
+	width: 320px;
+}
+.partner-imgbox1 > img:nth-of-type(2) {
+	width: 320px;
+	padding-left: 80px;
+}
+.partner-imgbox1:after {
+	position: absolute;
+	bottom: -20px;
+	left: 163px;
+	color: #3386B2;
+	font-weight: 600;
+	content: "CSTR 소화조";
+}
+.partner-imgbox1:before {
+	position: absolute;
+	bottom: -20px;
+	right: 163px;
+	color: #3386B2;
+	font-weight: 600;
+	content: "Plug-Flow 소화조";
+}
+.partner-imgbox2:before {
+	position: absolute;
+	bottom: -25px;
+	left: 65px;
+	color: #3386B2;
+	font-weight: 600;
+	content: "도드람 소화조(다겹소화조)";
+}
+.partner-imgbox2 > img:nth-of-type(1) {
+	width: 280px;
+	float: left;
+}
+.partner-imgbox2 > p {
+	padding: 130px 0 0 320px;
+	line-height: 26px;
+}
+.partner-imgbox3 > img {
+	width: 220px !important;
+	padding: 25px 25px 0;
+	vertical-align: middle;
+}
+.partner-imgbox3 > p {
+	padding: 40px 20px 0;
+	line-height: 28px;
+}
+.partner-imgbox4 {
+	text-align: center;
+}
+.partner-imgbox4 > img {
+	width: 300px !important;
+	padding: 25px 25px 0;
+	vertical-align: middle;
+}
+.partner-imgbox4 > p {
+	text-align: left;
+	padding: 40px 20px 0;
+	line-height: 28px;
+}
+.partner-imgbox5 > img {
+	width: 280px !important;
+	float: left;
+}
+.partner-imgbox5 > p {
+	padding: 144px 0 0 365px;
+}
+.partner-imgbox6 > p {
+	padding: 40px 20px 0;
+	line-height: 28px;
+}
+.partner-imgbox7 > p {
+	border: 1px solid #ccc;
+	line-height: 28px;
+	padding: 20px;
+}
+.partners002-wrap > img {
+	width: 100%;
+}
+.visib {
+	display: block;
+}
+.non {
+	display: none;
+}
 .product-container {
 	display: inline-block;
 	width: 900px;
@@ -377,6 +536,14 @@ body {
 }
 .intro-company-introduce2 img {
 	width: 100%;
+}
+.metal-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background: url("/resources/src/images/bg-metal-process.jpg") 85% -10% no-repeat;
 }
 .sub-title {
 	font-size: 24px;
@@ -598,8 +765,6 @@ body {
 }
 .base-img2 + div > img {
 	height: 100%;
-	border-radius: 8px;
-	border: 1px solid #3386B2;
 }
 .flex-box {
 	display: flex;

@@ -38,15 +38,17 @@
 						<a href="/dodram/introduction">회사소개</a>
 						<ul class="nav-depth">
 							<li><a href="/dodram/introduction">회사소개</a></li>
-							<li><a href="#">기술현황</a></li>
-							<li><a href="/dodram/introduction/organization">조직도</a></li>
+							<li><a href="/dodram/technology">특허기술현황</a></li>
+							<!-- <li><a href="/dodram/organization">조직도</a></li> -->
+							<li><a href="/dodram/cooperate">합작회사</a></li>
+							<li><a href="/dodram/partners">협력사</a></li>
 						</ul>
 					</li><!--
 					--><li>
 						<a href="/dodram/notice">도드람뉴스</a>
 						<ul class="nav-depth">
 							<li><a href="/dodram/notice">공지사항</a></li>
-							<li><a href="/dodram/news">언론보도</a></li>
+							<!-- <li><a href="/dodram/news">언론보도</a></li> -->
 						</ul>
 					</li><!--
 					--><li>
@@ -56,7 +58,7 @@
 							<li><a href="/dodram/t_product">구제역 사체 비료화</a></li>
 							<li><a href="/dodram/o_product">음식물 분리기</a></li>
 							<li><a href="/dodram/v_product">유기질 비료</a></li>
-							<li><a href="/dodram/i_product">가스화 방전</a></li>
+							<li><a href="/dodram/i_product">가스화 발전</a></li>
 						</ul>
 					</li><!--
 					--><li><a href="/dodram/visit">찾아오시는 길</a></li>

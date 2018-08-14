@@ -44,6 +44,33 @@ public class SiteMoveController {
 	public String dodram_home() {
 		return "/dodram/index";
 	}
+	
+	@RequestMapping(value = "/dodram/introduction")
+	public String dodram_introduction() {
+		return "/dodram/introduction/intro";
+	}
+	@RequestMapping(value = "/dodram/technology")
+	public String dodram_technology() {
+		return "/dodram/introduction/technology";
+	}
+	@RequestMapping(value = "/dodram/organization")
+	public String dodram_organization() {
+		return "/dodram/introduction/organization";
+	}
+	@RequestMapping(value = "/dodram/cooperate")
+	public String dodram_cooperate() {
+		return "/dodram/introduction/cooperate";
+	}
+	@RequestMapping(value = "/dodram/partners")
+	public String dodram_partners() {
+		return "/dodram/introduction/partners";
+	}
+	
+	@RequestMapping(value = "/dodram/notice")
+	public String dodram_notice() {
+		return "/dodram/notice/index";
+	}
+	
 	@RequestMapping(value = "/dodram/s_product")
 	public String dodram_water() {
 		return "/dodram/product/water";

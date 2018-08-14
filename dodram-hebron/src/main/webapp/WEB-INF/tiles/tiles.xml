@@ -25,8 +25,26 @@
 		<put-attribute name="footer" value="/WEB-INF/tiles/tile/dodram/footer.jsp" />
 	</definition>
 	
+	<definition name="dodramIntroduction" template="/WEB-INF/tiles/layout/dodramIntroduction.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/dodram/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/dodram/header.jsp" />
+		<put-attribute name="nav-introduction" value="/WEB-INF/tiles/tile/dodram/nav-introduction.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/dodram/footer.jsp" />
+	</definition>
+	
+	<definition name="dodramNotice" template="/WEB-INF/tiles/layout/dodramNotice.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tiles/tile/dodram/meta.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/dodram/header.jsp" />
+		<put-attribute name="nav-notice" value="/WEB-INF/tiles/tile/dodram/nav-notice.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/dodram/footer.jsp" />
+	</definition>
+	
 	<definition name="/dodram/index" extends="dodramLayout">
 		<put-attribute name="contents" value="/WEB-INF/views/dodram/index.jsp" />
+	</definition>
+	
+	<definition name="/dodram/introduction/*" extends="dodramIntroduction">
+		<put-attribute name="contents" value="/WEB-INF/views/dodram/introduction/{1}.jsp" />
 	</definition>
 	
 	<definition name="/dodram/product/*" extends="dodramProduct">
@@ -36,6 +54,12 @@
 	<definition name="/dodram/contact/*" extends="dodramContact">
 		<put-attribute name="contents" value="/WEB-INF/views/dodram/contact/{1}.jsp" />
 	</definition>
+	
+	<definition name="/dodram/notice/*" extends="dodramNotice">
+		<put-attribute name="contents" value="/WEB-INF/views/dodram/notice/{1}.jsp" />
+	</definition>
+	
+	
 	<!-- 도드람바이오 END -->	
 	
 	<!-- 헤브론테크 START -->

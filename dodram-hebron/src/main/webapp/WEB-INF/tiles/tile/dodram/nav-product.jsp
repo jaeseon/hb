@@ -11,7 +11,7 @@
 				--><li><a href="/dodram/t_product/">구제역 사체 비료화</a></li><!--
 				--><li><a href="/dodram/o_product/">음식물 분리기</a></li><!-- 
 				--><li><a href="/dodram/v_product/">유기질 비료</a></li><!--
-				--><li><a href="/dodram/i_product/">가스화 방전</a></li> 
+				--><li><a href="/dodram/i_product/">가스화 발전</a></li> 
 			</ul>
 		</div>
 	</div>
