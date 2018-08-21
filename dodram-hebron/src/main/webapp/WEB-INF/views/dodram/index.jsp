@@ -11,7 +11,7 @@
 					글로벌 성공키워드
 				</div>
 				<div class="small-box-container">
-					<div class="small-box intro">
+					<div class="small-box intro" onclick="javascript: window.location.href = 'dodram/introduction'">
 						<div class="box-text">
 							도드람바이오를<br />
 							소개합니다.
@@ -44,7 +44,7 @@
 					</div>
 				</div>
 				<div class="ms-box-container">
-					<div class="ms-box noti">
+					<div class="ms-box noti" onclick="javascript: window.location.href = 'dodram/notice'">
 						<div class="box-text">
 							<span>공지사항</span><br />
 							<div class="notice-more-container">
@@ -73,12 +73,15 @@
 							꾸준히 확장하고 있습니다.
 						</div>
 					</div>
-					<div class="middle-box2 product">
+					<div class="middle-box2 product" onclick="javascript: window.location.href = 'dodram/s_product'">
 						<div class="box-text">
 							<span>제품소개</span><br />
 							도드람바이오에서 취급하는<br />
 							제품들을 소개합니다.
 						</div>
+					</div>
+					<div class="contact-box" onclick="javascript: window.location.href = 'dodram/question'">
+						Contact us
 					</div>
 				</div>
 			</div>

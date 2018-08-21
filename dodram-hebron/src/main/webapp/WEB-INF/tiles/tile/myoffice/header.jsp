@@ -1,4 +1,10 @@
+<%@page import="java.text.SimpleDateFormat"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<%
+	Date now = new Date();
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy. M. dd. aaa h:mm:ss");
+%>
 
 <div class="header-wrap">
 	<div class="header">
@@ -38,8 +44,8 @@
 			</ul>
 			
 			<div class="nav-info">
-				Login: <span>20명</span>
-				<span>Server: 2018-08-09 14:00:21</span>
+				Login: <span>0명</span>
+				<span class="server-time">Server: <%= sdf.format(now) %></span>
 			</div>
 			
 			<div class="nav-logout">

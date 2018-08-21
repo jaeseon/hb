@@ -250,6 +250,7 @@ body {
 	margin-top: 1%;
 }
 .box-container {
+	position: relative;
 	display: flex;
 	height: 416px;
 }
@@ -265,19 +266,19 @@ body {
 	background-color: #aaa;
 	margin: 0;
 }
-.middle-box2:nth-child(2):after {
+.contact-box {
 	position: absolute;
-	bottom: -42px;
-	left: 0;
-	width: 100%;
+	width: 288px;
 	height: 37px;
+	bottom: 0;
+	right: 0;
 	color: #fff;
-	font-size: 24px;
+	line-height: 36px;
+	padding: 0 17px;
+	font-size: 22px;
 	font-weight: 600;
-	padding: 4px 20px;
-	content: "Contact us";
-	box-sizing: border-box;
 	background-color: #555;
+	box-sizing: border-box;
 	cursor: pointer;
 }
 .business {
