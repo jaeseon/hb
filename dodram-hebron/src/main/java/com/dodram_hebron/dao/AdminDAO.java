@@ -10,4 +10,5 @@ public interface AdminDAO {
 	public List<AdminVO> selectAdminAcount(String id) throws Exception;
 	public List<ContactBoardVO> selectContactBoard() throws Exception;
 	public void insertContactBoard(Map<String, Object> list);
+	public int deleteContactBoard(Map<String, Object> map);
 }

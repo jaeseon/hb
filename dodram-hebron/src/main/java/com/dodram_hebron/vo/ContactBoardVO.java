@@ -14,17 +14,28 @@ public class ContactBoardVO {
 	private String answ;
 	private Date answ_date;
 	private String type;
-	
-	
+	private int delete_YN;
+	private String delete_User;
 	
 	@Override
 	public String toString() {
 		return "ContactBoardVO [contact_pkid=" + contact_pkid + ", user_name=" + user_name + ", user_email="
 				+ user_email + ", user_tel=" + user_tel + ", user_title=" + user_title + ", user_ques=" + user_ques
 				+ ", reg_date=" + reg_date + ", mail_yn=" + mail_yn + ", answ=" + answ + ", answ_date=" + answ_date
-				+ ", type=" + type + "]";
+				+ ", type=" + type + ", delete_YN=" + delete_YN + ", delete_User=" + delete_User + "]";
 	}
-	
+	public int getDelete_YN() {
+		return delete_YN;
+	}
+	public void setDelete_YN(int delete_YN) {
+		this.delete_YN = delete_YN;
+	}
+	public String getDelete_User() {
+		return delete_User;
+	}
+	public void setDelete_User(String delete_User) {
+		this.delete_User = delete_User;
+	}
 	public String getUser_tel() {
 		return user_tel;
 	}

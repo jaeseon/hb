@@ -12,8 +12,10 @@
 	
 	<select id="selectContactBoard" resultType="contactBoardVO">
 		SELECT *
-		  FROM Contact_board
+		FROM Contact_board
+		WHERE Delete_YN = 0
 	  ORDER BY Contact_PKID DESC
+	  
 	</select>
 	
 	<insert id="insertContactBoard" parameterType="java.util.Map">
@@ -21,4 +23,7 @@
 			Contact_board(User_Name, User_Email, User_Tel, User_Title, User_Ques, Mail_YN, Type) 
 		VALUES(#{name}, #{email}, #{tel}, #{title}, #{contents}, 'N', #{type})
 	</insert>
+	<update id="deleteContract" parameterType="java.util.Map">
+		UPDATE Contact_board SET Delete_YN = 1, Delete_User = #{userId}, Delete_Date = now() WHERE Contact_PKID = #{no}
+	</update>
 </mapper>

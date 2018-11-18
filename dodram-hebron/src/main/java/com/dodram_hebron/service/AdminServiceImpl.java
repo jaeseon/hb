@@ -62,5 +62,10 @@ public class AdminServiceImpl implements AdminService {
 	public void insertContactBoard(Map<String, Object> list) {
 		adminDAO.insertContactBoard(list);
 	}
+
+	@Override
+	public int deleteContentBoard(Map<String, Object> map) {
+		return adminDAO.deleteContactBoard(map);
+	}
 	
 }

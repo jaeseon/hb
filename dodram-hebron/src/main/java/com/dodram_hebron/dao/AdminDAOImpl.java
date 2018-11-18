@@ -32,5 +32,10 @@ public class AdminDAOImpl implements AdminDAO {
 	public void insertContactBoard(Map<String, Object> list) {
 		sqlSession.insert(Namespace + ".insertContactBoard", list);
 	}
+
+	@Override
+	public int deleteContactBoard(Map<String, Object> map) {
+		return sqlSession.update(Namespace + ".deleteContract", map);
+	}
 }
 

@@ -9,4 +9,5 @@ public interface AdminService {
 	public int loginCheckProcess(String id, String pw) throws Exception;
 	public List<ContactBoardVO> boardList();
 	public void insertContactBoard(Map<String, Object> list);
+	public int deleteContentBoard(Map<String, Object> map);
 }

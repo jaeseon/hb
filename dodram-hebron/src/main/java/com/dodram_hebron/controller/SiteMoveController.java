@@ -1,5 +1,8 @@
 package com.dodram_hebron.controller;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashMap;
 import java.util.List;
 
 /*
@@ -9,12 +12,15 @@ import java.util.List;
  */
 
 import java.util.Locale;
+import java.util.Map;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -183,11 +189,34 @@ public class SiteMoveController {
 		List<ContactBoardVO> list =  service.boardList();
 				
 		ModelAndView mav = new ModelAndView();
-		
+		 
 		mav.addObject("ContactBoardList", list);
 		mav.setViewName("/myOffice/board/QA/index");
 		
 		return mav;
+	}
+	
+	@RequestMapping(value ="/myOffice/board/QA/delete/{no}")
+	public void admin_board_delete(HttpSession session,
+									@PathVariable int no, 
+									HttpServletResponse response) throws IOException{
+		try {
+			Map<String, Object> map = new HashMap<String, Object>();
+			map.put("no", no);
+			map.put("userId", session.getAttribute("admin-login"));
+			service.deleteContentBoard(map);
+			response.setContentType("text/html; charset=UTF-8");
+			PrintWriter writer = response.getWriter();
+			
+			writer.println("<script>");
+			writer.println("alert('정상적으로 삭제되었습니다.')");
+			writer.println("window.history.go(-1);");
+			writer.println("</script>");
+			
+			writer.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

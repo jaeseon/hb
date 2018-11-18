@@ -36,7 +36,7 @@
 								<input type="button" onclick="" value="답변하기">
 							</form>
 						</div>
-						<div class="delete-btn">삭제</div>
+						<a href="/myOffice/board/QA/delete/${ boardList.contact_pkid }" class="delete-btn" onclick="if(!confirm('정말로 삭제 하시겠습니까?')){return false;}">삭제</a>
 					</div>
 				</c:forEach>
 			</div>
