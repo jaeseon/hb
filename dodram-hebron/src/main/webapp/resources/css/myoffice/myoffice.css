@@ -28,6 +28,11 @@ h3 {
 	padding: 10px;
 	overflow: auto;
 }
+.small-box-contents{
+	min-height: 200px;
+	padding: 10px;
+	overflow: auto;
+}
 .contents-items {
 	padding: 12px;
 	font-size: 12px;
