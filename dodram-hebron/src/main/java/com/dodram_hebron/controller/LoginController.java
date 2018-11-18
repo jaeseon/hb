@@ -49,7 +49,7 @@ public class LoginController {
 		}
 		// 로그인 성공
 		else {
-			session.setAttribute("admin-login", id);
+			session.setAttribute("admin-login", id); // 세션에 아이디 저장
 			session.setMaxInactiveInterval(60 * 15); // 15분 세션 유지
 			
 			response.sendRedirect("myOffice");
