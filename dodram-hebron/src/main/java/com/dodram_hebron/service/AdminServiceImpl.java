@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import com.dodram_hebron.dao.AdminDAO;
 import com.dodram_hebron.vo.AdminVO;
 import com.dodram_hebron.vo.ContactBoardVO;
+import com.dodram_hebron.vo.UpdateReportVO;
 
 @Service
 public class AdminServiceImpl implements AdminService {
@@ -31,10 +32,8 @@ public class AdminServiceImpl implements AdminService {
 			// 사용자가 입력한 패스워드가 관리자 패스워드면(로그인 성공)
 			if (pw.equals(rosterPW)) {
 				return 2;
-				
 			}
 		}
-		
 		// 패스워드 틀림
 		return 1;
 	}
@@ -66,6 +65,11 @@ public class AdminServiceImpl implements AdminService {
 	@Override
 	public int deleteContentBoard(Map<String, Object> map) {
 		return adminDAO.deleteContactBoard(map);
+	}
+
+	@Override
+	public List<UpdateReportVO> updateReportList() {
+		return adminDAO.selectUpdateReport();
 	}
 	
 }

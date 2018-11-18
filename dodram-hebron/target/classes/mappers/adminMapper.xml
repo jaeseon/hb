@@ -15,7 +15,12 @@
 		FROM Contact_board
 		WHERE Delete_YN = 0
 	  ORDER BY Contact_PKID DESC
-	  
+	</select>
+	
+	<select id="selectUpdateReport" resultType="com.dodram_hebron.vo.UpdateReportVO">
+		SELECT *
+		FROM update_report_board
+		ORDER BY no DESC
 	</select>
 	
 	<insert id="insertContactBoard" parameterType="java.util.Map">

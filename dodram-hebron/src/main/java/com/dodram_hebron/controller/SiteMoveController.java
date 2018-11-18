@@ -174,12 +174,14 @@ public class SiteMoveController {
 	 * 관리자 페이지 
 	 */ 
 	@RequestMapping(value = "/myOffice")
-	public String admin_index(HttpSession session) {
+	public String admin_index(HttpSession session,
+								Model model) throws Exception {
 		String adminLogin = (String) session.getAttribute("admin-login");
 		
 		if (adminLogin == null || adminLogin.equals("")) {
 			return "/myOffice/login/index";
 		} else {
+			model.addAttribute("updateReportList", service.updateReportList());
 			return "/myOffice/index";
 		}
 	}
