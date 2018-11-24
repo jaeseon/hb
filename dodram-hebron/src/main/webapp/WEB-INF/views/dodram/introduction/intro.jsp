@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <div class="intro-container">
 	<div class="intro-text">
 		<div class="intro-title">회사소개</div>
@@ -14,7 +16,9 @@
 		</div>
 		
 		<div class="intro-company-introduce2">
-			<div class="sub-title"></div>
+			<c:forEach var="content" items="${ content }">
+				${content.content }
+			</c:forEach>
 		</div>
 	</div>
 </div>

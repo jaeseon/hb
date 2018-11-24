@@ -52,7 +52,8 @@ public class SiteMoveController {
 	}
 	
 	@RequestMapping(value = "/dodram/introduction")
-	public String dodram_introduction() {
+	public String dodram_introduction(Model model) {
+		model.addAttribute("content", service.editorBoardList("intro"));
 		return "/dodram/introduction/intro";
 	}
 	@RequestMapping(value = "/dodram/technology")
@@ -212,7 +213,7 @@ public class SiteMoveController {
 			
 			writer.println("<script>");
 			writer.println("alert('정상적으로 삭제되었습니다.')");
-			writer.println("window.history.go(-1);");
+			writer.println("window.location.href ='/myOffice/board/QA'");
 			writer.println("</script>");
 			
 			writer.flush();

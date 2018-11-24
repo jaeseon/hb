@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import com.dodram_hebron.vo.AdminVO;
 import com.dodram_hebron.vo.ContactBoardVO;
+import com.dodram_hebron.vo.EditorVO;
 import com.dodram_hebron.vo.UpdateReportVO;
 
 @Repository
@@ -43,5 +44,16 @@ public class AdminDAOImpl implements AdminDAO {
 	public List<UpdateReportVO> selectUpdateReport(){
 		return sqlSession.selectList(Namespace + ".selectUpdateReport");
 	}
+
+	@Override
+	public List<EditorVO> selectEditorBoard(String title) {
+		return sqlSession.selectList(Namespace + ".selectEditorBoard", title);
+	}
+	
+	@Override
+	public int updateEditorBoard(Map<String, Object> list) {
+		return sqlSession.update(Namespace + ".updateEditorBoard", list);
+	}
+
 }
 

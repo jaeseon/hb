@@ -143,5 +143,11 @@
 	<definition name="/myOffice/board/QA/index" extends="myOfficeLayout">
 		<put-attribute name="contents" value="/WEB-INF/views/myOffice/board/QA/index.jsp" />
 	</definition>
+	
+	<definition name="/myOffice/board/intro" extends="myOfficeLayout">
+		<put-attribute name="contents" value="/WEB-INF/views/myOffice/board/intro.jsp" />
+	</definition>
 	<!-- 마이오피스 END -->
+	
+	
 </tiles-definitions>

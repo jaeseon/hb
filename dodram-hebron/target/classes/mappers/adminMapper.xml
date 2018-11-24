@@ -16,6 +16,11 @@
 		WHERE Delete_YN = 0
 	  ORDER BY Contact_PKID DESC
 	</select>
+	<select id="selectEditorBoard" resultType="editorVO">
+		SELECT *
+		FROM editor_board
+		WHERE title = #{title}
+	</select>
 	
 	<select id="selectUpdateReport" resultType="com.dodram_hebron.vo.UpdateReportVO">
 		SELECT *
@@ -27,6 +32,11 @@
 		INSERT INTO 
 			Contact_board(User_Name, User_Email, User_Tel, User_Title, User_Ques, Mail_YN, Type) 
 		VALUES(#{name}, #{email}, #{tel}, #{title}, #{contents}, 'N', #{type})
+	</insert>
+	<insert id="updateEditorBoard" parameterType="java.util.Map">
+		UPDATE editor_board
+		SET content = #{content}
+		WHERE title = #{title}
 	</insert>
 	<update id="deleteContract" parameterType="java.util.Map">
 		UPDATE Contact_board SET Delete_YN = 1, Delete_User = #{userId}, Delete_Date = now() WHERE Contact_PKID = #{no}

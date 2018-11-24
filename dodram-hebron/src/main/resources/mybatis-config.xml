@@ -8,5 +8,6 @@
 		<typeAlias alias="adminVO" type="com.dodram_hebron.vo.AdminVO" />
 		<typeAlias alias="memberVO" type="com.dodram_hebron.vo.MemberVO" />
 		<typeAlias alias="contactBoardVO" type="com.dodram_hebron.vo.ContactBoardVO" />
+		<typeAlias alias="editorVO" type="com.dodram_hebron.vo.EditorVO" />
 	</typeAliases>
 </configuration>

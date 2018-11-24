@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="updateReportVO" type="com.dodram_hebron.vo.UpdateReportVO" />
+		<typeAlias alias="adminVO" type="com.dodram_hebron.vo.AdminVO" />
+		<typeAlias alias="memberVO" type="com.dodram_hebron.vo.MemberVO" />
+		<typeAlias alias="contactBoardVO" type="com.dodram_hebron.vo.ContactBoardVO" />
+	</typeAliases>
+</configuration>

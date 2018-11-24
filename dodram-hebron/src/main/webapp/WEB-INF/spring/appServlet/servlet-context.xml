@@ -23,6 +23,7 @@
 	
 	<context:component-scan base-package="com.dodram_hebron.*" />
 	
+	<!-- Tiles 뷰 리졸버 -->
 	<beans:bean id="tilesviewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver" />
 	<beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
 		<beans:property name="definitions">
@@ -31,5 +32,12 @@
 			</beans:list>
 		</beans:property>
 	</beans:bean>
+	<!-- file Upload -->
+    <beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- max upload size in bytes -->
+        <beans:property name="maxUploadSize" value="20971520" /> <!-- 20MB -->
+        <!-- max size of file in memory (in bytes) -->
+        <beans:property name="maxInMemorySize" value="1048576" /> <!-- 1MB -->
+    </beans:bean>
 	
 </beans:beans>

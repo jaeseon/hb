@@ -16,9 +16,9 @@
 				-->	<li>
 					<a>관리자<span class="caret"></span></a>
 					<ul class="sub-menu">
+						<li><a href="/myOffice/intro">회사소개 수정</a></li>
 						<li><a href="#">로그인 기록보기</a></li>
 						<li><a href="#">관리자 계정관리</a></li>
-						
 					</ul>
 				</li><!--
 				--><li>
@@ -38,13 +38,14 @@
 					<a>게시판<span class="caret"></span></a>
 					<ul class="sub-menu">
 						<li><a href="/myOffice/board/QA">문의하기 관리</a></li>
+						
 						<li><a href="#">메일 관리</a></li>
 					</ul>
 				</li>
 			</ul>
 			
 			<div class="nav-info">
-				Login: <span>0명</span>
+				Login: <span>-명</span>
 				<span class="server-time">Server: <%= sdf.format(now) %></span>
 			</div>
 			

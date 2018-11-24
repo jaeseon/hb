@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+body {
+	font-family: "맑은 고딕";
+}
+.wrap {
+  min-width: 1170px;
+  background-image: url("/resources/src/images/img-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contents-wrap {
+  width: 100%;
+  padding-top: 104px;
+}
+.contents-container {
+  width: 1100px;
+  margin: 80px auto 0;
+}
+.row {
+  display: flex;
+  padding-bottom: 46px;
+}
+.vidio-wrap, .notice-wrap {
+  flex: 1;
+}
+.word {
+  display: inline-block;
+  position: relative;
+  color: #3386B2;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px 17px;
+}
+.word > span {
+  color: #000;
+}
+.word::before {
+  position: absolute;
+  top: 5px;
+  left: -17px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #3386B2;
+  border-radius: 10px;
+  content: "";
+}
+.youtubeWrap {
+  position: relative;
+  width: 90%;
+  padding-bottom: 50.55%;
+}
+.youtubeWrap iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.notice-content > table {
+  margin-top: 10px;
+}
+.notice-content > table > tbody > tr {
+  height: 30px;
+}
+.notice-content > table td {
+  font-size: 13px;
+  color: #6a6a6a;
+  /* white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; */
+}
+.notice-content > table td a {
+  color: #6a6a6a;
+}
+.notice-content > table td a:hover {
+  font-weight: 600;
+}
+.product-wrap ul li {
+  display: inline-block;
+  width: 25%;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.product-wrap ul li a {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.product-wrap ul li img {
+  width: 92%;
+  padding: 15px;
+  min-height: 200px;
+}
+.product-wrap ul li > div {
+  padding-top: 14px;
+}
+
+.small-box-container {
+  display: flex;
+}
+.small-box-items {
+  position: relative;
+  padding: 10px;
+}
+.small-box-items > img {
+  width: 346.67px;
+  height: 244px;
+  border-radius: 14px;
+}
+.small-box-items div {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-align: right;
+  line-height: 22px;
+  font-size: 14px;
+}
+.small-box-items div p:hover {
+	font-weight: 600;
+	cursor: pointer;
+}
+.small-box-items div p a {
+	color: #fff;
+}
+.small-box-items strong {
+  display: block;
+  padding-bottom: 12px;
+  font-size: 28px;
+}
+
+/* Hebron Introduction Start */
+.wrap-introduction {
+	width: 1100px;
+	min-height: 1000px;
+	margin: 0 auto;
+	padding-top: 104px;
+	font-size: 0;
+}
+.intro-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background-image: url("/resources/src/images/bg-company-intro.jpg");
+	background-position: 85% 0;
+	background-repeat: no-repeat;
+}
+.intro-text {
+	padding: 50px 0 0 80px;
+	font-size: 13px;
+}
+.intro-title {
+	font-size: 34px;
+	font-weight: 600;
+	color: #B23333;
+	padding-bottom: 40px;
+	letter-spacing: -1px;
+}
+.intro-company-introduce1 {
+	line-height: 20px;
+	color: #555;
+}
+.intro-company-introduce1 > span {
+	font-size: 20px;
+	color: #3386B2;
+	letter-spacing: -1px;
+}
+.intro-company-introduce1 > p {
+	padding-top: 12px;
+	color: #848484;
+}
+.intro-company-introduce2 {
+	line-height: 22px;
+	padding-top: 50px;
+	font-size: 14px;
+}
+.intro-company-introduce2 > p:NTH-CHILD(2) {
+	padding: 20px 0;
+} 
+.intro-company-introduce2 b {
+	font-weight: 600;
+	color: #3386B2;
+}
+.intro-company-introduce2 span {
+	color: #B23333;
+}
+.intro-company-introduce2 img {
+	width: 100%;
+	border: 1px solid #3386B2;
+}
+.organi-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background-image: url("/resources/src/images/bg-organization.jpg");
+	background-position: 85% 0;
+	background-repeat: no-repeat;
+}
+.organization-chart-container {
+	width: 100%;
+	min-height: 700px;
+	font-size: 15px;
+}
+.organization-chart {
+	text-align: center;
+	padding: 40px 0;
+}
+.organi-main {
+	width: 200px;
+	margin: 20px auto;
+	border: 1px solid #3386B2;
+	background-color: #3386B2;
+	color: #fff;
+	font-weight: 600;
+	padding: 14px 20px;
+}
+.organi-sub-container {
+	display: flex;
+}
+.organi-sub {
+	border: 1px solid #3386B2;
+	min-height: 380px;
+	line-height: 30px;
+	text-align: left;
+	flex: 1;
+}
+.organi-sub:not(:FIRST-CHILD) {
+	border-left: 0;
+}
+.organi-sub > span {
+	display: block;
+	text-align: center;
+	background-color: #3386B2;
+	color: #fff;
+	font-weight: 600;
+	padding: 10px;
+}
+.organi-sub ul {
+	padding: 10px 20px;
+}
+.company-status span {
+	display: block;
+	font-size: 24px;
+	margin: 10px 0;
+}
+.company-status table {
+	width: 100%;
+	margin-bottom: 40px;
+	font-size: 15px;
+}
+.company-status tr > td:FIRST-CHILD {
+	text-align: center;
+	font-weight: 600;
+	background-color: #f8f8f8;
+}
+.company-status td {
+	border: 1px solid #000;
+	padding: 8px 12px;
+	line-height: 24px;
+}
+.metal-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background-image: url("/resources/src/images/bg-metal-process.jpg");
+	background-position: 85% 0;
+	background-repeat: no-repeat;
+}
+.product-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background-image: url("/resources/src/images/bg-product.jpg");
+	background-position: 85% 0;
+	background-repeat: no-repeat;
+}
+.sub-title {
+	font-size: 24px;
+	font-weight: 600;
+	padding-bottom: 14px;
+}
+.production-container {
+	display: flex;
+}
+.production-container > div {
+	position: relative;
+	margin: 60px 1% 0;
+	width: 100%;
+}
+.production-container img {
+	width: 100%;
+	height: 300px;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	border-radius: 0;
+}
+.production-container > div:BEFORE {
+	position: absolute;
+	top: -26px;
+	left: 6px;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 600;
+}
+.production-container:NTH-CHILD(1) > div:NTH-CHILD(1):BEFORE {
+	content: "LAZER L-33030S, TRUMPF";
+}
+.production-container:NTH-CHILD(1) > div:NTH-CHILD(2):BEFORE {
+	content: "NCT VIPROS357(ATC), AMADA";
+}
+.production-container:NTH-CHILD(2) > div:NTH-CHILD(1):BEFORE {
+	content: "절곡기 RG-25, AMADA";
+}
+.production-container:NTH-CHILD(2) > div:NTH-CHILD(2):BEFORE {
+	content: "절곡기 APL11025, AIZAWA";
+}
+.production-container:NTH-CHILD(3) > div:NTH-CHILD(1):BEFORE {
+	content: "샤링기 A3-525, AIZAWA";
+}
+.production-container:NTH-CHILD(3) > div:NTH-CHILD(2):BEFORE {
+	content: "앵글 절단기";
+}
+.production-container:NTH-CHILD(4) > div:NTH-CHILD(1):BEFORE {
+	content: "코너 샤링기";
+}
+.production-container:NTH-CHILD(4) > div:NTH-CHILD(2):BEFORE {
+	content: "밀링 2호기, 남선";
+}
+.production-container:NTH-CHILD(5) > div:NTH-CHILD(1):BEFORE {
+	content: "PIPE 절단기";
+}
+.production-container:NTH-CHILD(5) > div:NTH-CHILD(2):BEFORE {
+	content: "정밀 정반 (2440*2600, 2400*5000)";
+}
+.sub-title ~ p {
+	padding: 14px 8px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.hardware-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background-image: url("/resources/src/images/bg-hardware.jpg");
+	background-position: 85% 0;
+	background-repeat: no-repeat;
+}
+.table-wrap {
+	text-align: center;
+	margin: 80px 0;
+}
+.table-wrap table {
+	width: 100%;
+}
+.table-wrap th {
+	background-color: #3386B2;
+	font-weight: 600;
+	color: #fff;
+	padding: 20px 0;
+}
+.table-wrap tr {
+	border: 1px solid #3386B2;
+}
+.table-wrap td {
+	vertical-align: middle;
+	padding: 15px 0;
+}
+
+.contact-container {
+	display: inline-block;
+	width: 900px;
+	min-height: 300px;
+	vertical-align: top;
+	font-size: 16px;
+	background-image: url("/resources/src/images/bg-contact.jpg");
+	background-position: 85% 0;
+	background-repeat: no-repeat;
+}
+.question-form-container {
+	width: 500px;
+	border: 1px solid #3386B2;
+	border-radius: 6px;
+	margin: 30px auto 0;
+	padding: 12px 18px;
+	box-shadow: 0 0 3px #000;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, .6);
+}
+.question-form-container > form > div {
+	padding: 14px 0;
+}
+.question-form-container > form > div img {
+	width: 24px;
+	height: 24px;
+	border: 0;
+	padding: 0 20px 0 15px;
+	vertical-align: middle;
+}
+.question-form-container > form input[type=text], .question-form-container > form input[type=email] {
+	width: 70%;
+	font-size: 12px;
+	border: 0;
+	padding: 7px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.contents-area {
+	width: 73%;
+	border: 1px solid #ccc;
+	padding: 7px 10px;
+	font-size: 12px;
+	box-sizing: border-box;
+	resize: none;
+	overflow: hidden;
+}
+.question-form-container input[type=submit] {
+	border: 0;
+	color: #fff;
+	font-weight: 600;
+	border-radius: 6px;
+	box-shadow: 0 2px 4px #000;
+	padding: 10px 16px;
+	background: linear-gradient(60deg, #48b57f, #3386B2);
+	cursor: pointer;
+}
+.question-form-container form *:focus {
+	outline: none;
+	background-color: #f3f3f3;
+}
+.address-table-container > table {
+	width: 100%;
+	border-top: 1px solid #000;
+}
+.address-table-container > table tr > td:first-child {
+	text-align: center;
+	background-color: #fafafa;
+	font-weight: 600;
+}
+.address-table-container > table td {
+	font-size: 12px;
+	padding: 4px 10px;
+	border-bottom: 1px solid #e1e1e1;
+}
+#map {
+	height: 600px;
+	margin: 60px 0;
+}

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import com.dodram_hebron.dao.AdminDAO;
 import com.dodram_hebron.vo.AdminVO;
 import com.dodram_hebron.vo.ContactBoardVO;
+import com.dodram_hebron.vo.EditorVO;
 import com.dodram_hebron.vo.UpdateReportVO;
 
 @Service
@@ -70,6 +71,16 @@ public class AdminServiceImpl implements AdminService {
 	@Override
 	public List<UpdateReportVO> updateReportList() {
 		return adminDAO.selectUpdateReport();
+	}
+
+	@Override
+	public int updateEditorBoard(Map<String, Object> list) {
+		return adminDAO.updateEditorBoard(list);
+	}
+
+	@Override
+	public List<EditorVO> editorBoardList(String title) {
+		return adminDAO.selectEditorBoard(title);
 	}
 	
 }
