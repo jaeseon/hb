@@ -55,5 +55,14 @@ public class AdminDAOImpl implements AdminDAO {
 		return sqlSession.update(Namespace + ".updateEditorBoard", list);
 	}
 
+	@Override
+	public int updateCountCompanyAccessLog(Map<String, Object> list) {
+		return sqlSession.update(Namespace + ".updateCountCompanyAccessLog", list);
+	}
+
+	@Override
+	public int insertCompanyAccessLog(Map<String, Object> list) {
+		return sqlSession.insert(Namespace + ".insertCompanyAccessLog", list);
+	}
 }
 

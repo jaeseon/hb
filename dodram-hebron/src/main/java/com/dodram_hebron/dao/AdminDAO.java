@@ -16,4 +16,6 @@ public interface AdminDAO {
 	public int updateEditorBoard(Map<String, Object> list);
 	public int deleteContactBoard(Map<String, Object> map);
 	public List<UpdateReportVO> selectUpdateReport();
+	public int updateCountCompanyAccessLog(Map<String, Object> list);
+	public int insertCompanyAccessLog(Map<String, Object> list);
 }

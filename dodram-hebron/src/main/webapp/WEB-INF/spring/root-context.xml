@@ -15,17 +15,17 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
-		<property name="url"
-			value="jdbc:log4jdbc:mysql://localhost:3306/test_db?useSSL=false&amp;serverTimezone=UTC">
-		</property>
-		<property name="username" value="scott"></property>
-		<property name="password" value="tiger"></property>
+<!-- 		<property name="url" -->
+<!-- 			value="jdbc:log4jdbc:mysql://localhost:3306/dodrambio?useSSL=false&amp;serverTimezone=UTC"> -->
+<!-- 		</property> -->
+<!-- 		<property name="username" value="root"></property> -->
+<!-- 		<property name="password" value="1234"></property> -->
 		
-		<!-- <property name="url"
+		<property name="url"
 			value="jdbc:log4jdbc:mysql://localhost:3306/dodrambio?useSSL=false&amp;serverTimezone=UTC">
 		</property>
 		<property name="username" value="dodrambio"></property>
-		<property name="password" value="bPM4b13K8sQl"></property> -->
+		<property name="password" value="bPM4b13K8sQl"></property>
 	</bean>
 	
 	<!-- myBatis SqlSessionFactoryBean -->

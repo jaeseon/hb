@@ -33,12 +33,22 @@
 			Contact_board(User_Name, User_Email, User_Tel, User_Title, User_Ques, Mail_YN, Type) 
 		VALUES(#{name}, #{email}, #{tel}, #{title}, #{contents}, 'N', #{type})
 	</insert>
-	<insert id="updateEditorBoard" parameterType="java.util.Map">
+	
+	<insert id="insertCompanyAccessLog" parameterType="java.util.Map">
+		INSERT INTO	access_log(type, date, count, register_date)
+		VALUES (#{companyType}, #{date}, 1, now())
+	</insert>
+	<update id="updateEditorBoard" parameterType="java.util.Map">
 		UPDATE editor_board
 		SET content = #{content}
 		WHERE title = #{title}
-	</insert>
+	</update>
 	<update id="deleteContract" parameterType="java.util.Map">
 		UPDATE Contact_board SET Delete_YN = 1, Delete_User = #{userId}, Delete_Date = now() WHERE Contact_PKID = #{no}
+	</update>
+	<update id="updateCountCompanyAccessLog" parameterType="java.util.Map">
+		UPDATE access_log 
+		SET count = count+1
+		WHERE date = #{date} and type = #{companyType}
 	</update>
 </mapper>

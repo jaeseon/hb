@@ -82,5 +82,14 @@ public class AdminServiceImpl implements AdminService {
 	public List<EditorVO> editorBoardList(String title) {
 		return adminDAO.selectEditorBoard(title);
 	}
-	
+
+	@Override
+	public int updateCountCompanyAccessLog(Map<String, Object> list) {
+		return adminDAO.updateCountCompanyAccessLog(list);
+	}
+
+	@Override
+	public int insertCompanyAccessLog(Map<String, Object> list) {
+		return adminDAO.insertCompanyAccessLog(list);
+	}
 }

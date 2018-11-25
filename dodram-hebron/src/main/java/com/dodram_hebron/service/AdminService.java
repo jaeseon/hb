@@ -15,4 +15,6 @@ public interface AdminService {
 	public int updateEditorBoard(Map<String, Object> list);
 	public int deleteContentBoard(Map<String, Object> map);
 	public List<UpdateReportVO> updateReportList();
+	public int updateCountCompanyAccessLog(Map<String, Object> list);
+	public int insertCompanyAccessLog(Map<String, Object> list);
 }
