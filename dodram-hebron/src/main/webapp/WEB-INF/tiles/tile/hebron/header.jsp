@@ -45,6 +45,7 @@
 						</li>
 						<li><a href="/hebron/hardware">기계설비</a></li>
 						<li><a href="/hebron/visit">찾아오시는 길</a></li>
+						<li><a href="/hebron/question">제품&견적 문의</a></li>
 					</ul>
 				</div>
 			</div>
