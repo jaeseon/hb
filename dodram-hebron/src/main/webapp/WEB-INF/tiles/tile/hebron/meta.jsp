@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/resources/css/hebron/header.css">
 <link rel="stylesheet" href="/resources/css/hebron/nav.css">
 <link rel="stylesheet" href="/resources/css/hebron/footer.css">
-<link rel="stylesheet" href="/resources/css/hebron/hebron.css">
+<link rel="stylesheet" href="/resources/css/hebron/hebron.css?t=20181204_02">
 <link rel="stylesheet" href="/resources/css/hebron/jquery.bxslider.css">
 
 <!-- WEB-FONT -->
