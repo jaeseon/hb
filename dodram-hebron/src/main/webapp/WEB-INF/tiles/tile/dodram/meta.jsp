@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/resources/css/dodram/header.css">
 <link rel="stylesheet" href="/resources/css/dodram/nav.css">
 <link rel="stylesheet" href="/resources/css/dodram/footer.css">
-<link rel="stylesheet" href="/resources/css/dodram/dodram.css">
+<link rel="stylesheet" href="/resources/css/dodram/dodram.css?t=20181204">
 <link rel="stylesheet" href="/resources/css/dodram/jquery.bxslider.css">
 
 <!-- WEB-FONT -->

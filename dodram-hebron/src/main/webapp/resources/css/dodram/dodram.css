@@ -5,7 +5,7 @@ body {
 }
 .wrap {
 	width: 100%;
-	min-height: 920px;
+	min-height: 850px;
 	background-color: #f5f5f5;
 	padding-top: 103px;
 }
@@ -27,25 +27,22 @@ body {
 	font-size: 0;
 }
 .big-box-wrap {
-	display: flex;
 	padding: 60px 0;
-}
-.big-box-container {
-	flex: 1;
 }
 .big-box {
 	position: relative;
-	width: 100%;
-	height: 640px;
-	color: #fff;
-	padding: 85px 40px;
-	font-size: 34px;
-	font-weight: 600;
+	width: 877px;
+	height: 422px;
 	box-sizing: border-box;
-	z-index: 1;
-	background: url("/resources/src/images/img-dodram-main01.jpg") 44%;
-	background-size: cover;
-	background-repeat: no-repeat;
+}
+.big-imgbox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.big-imgbox > img {
+	width: 100%;
+	height: 100%;
 }
 .big-box-container:first-child {
 	margin-right: 6px;
@@ -56,7 +53,7 @@ body {
 .big-box-container:last-child {
 	height: 430px;
 }
-.big-box:before {
+.intro:before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -64,7 +61,6 @@ body {
 	height: 100%;
 	background-color: rgba(56, 101, 28, .16);
 	content: "";
-	z-index: -1;
 }
 .small-box-container {
 	display: flex;
@@ -77,7 +73,17 @@ body {
 .small-box:first-child {
 	margin-right: 6px;
 }
+.ps-absolute {
+	position: absolute;
+}
+.ps-wit-hei {
+	width: 288px;
+	height: 209px;
+}
 .intro {
+	height: 255px !important;
+	bottom: -258px;
+	left: 0;
 	background: url("/resources/src/images/img-dodram-main02.jpg") 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -118,7 +124,10 @@ body {
 	margin-bottom: 6px;
 }
 .oper {
-	position: relative;
+	width: 294px !important;
+	height: 255px !important;
+	bottom: -258px;
+	right: 292px;
 	background: url("/resources/src/images/img-dodram-main06.jpg") 59%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -149,6 +158,8 @@ body {
 	color : #000;
 }
 .mark {
+	top: 0;
+	right: -292px;
 	background: url("/resources/src/images/logo-dodram.jpg") 50% 85%;
 	background-size: 60%;
 	background-repeat: no-repeat;
@@ -165,7 +176,9 @@ body {
 	color: #49b845;
 }
 .noti {
-	position: relative;
+	height: 255px !important;
+	bottom: -258px;
+	right: 0px;
 	background-image: url("/resources/src/images/img-dodram-main09.jpg");
 	background-repeat: no-repeat;
 	background-color: #fff;
@@ -215,7 +228,8 @@ body {
 	right: 9px;
 }
 .info {
-	position: relative;
+	top: 212px;
+	right: -292px;
 	background: url("/resources/src/images/img-dodram-main07.jpg") 85%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -270,8 +284,8 @@ body {
 	position: absolute;
 	width: 288px;
 	height: 37px;
-	bottom: 0;
-	right: 0;
+	bottom: -258px;
+	right: -292px;
 	color: #fff;
 	line-height: 36px;
 	padding: 0 17px;
@@ -300,6 +314,10 @@ body {
 	color : #333;
 }
 .product {
+	top: 424px;
+	right: -292px;
+	width: 288px;
+	height: 216px;
 	background: url("/resources/src/images/img-dodram-main08.jpg") 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
