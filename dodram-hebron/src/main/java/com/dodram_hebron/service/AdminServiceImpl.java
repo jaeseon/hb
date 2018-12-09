@@ -92,4 +92,9 @@ public class AdminServiceImpl implements AdminService {
 	public int insertCompanyAccessLog(Map<String, Object> list) {
 		return adminDAO.insertCompanyAccessLog(list);
 	}
+
+	@Override
+	public int selectAccessLogCount(Map<String, Object> list) {
+		return adminDAO.selectAccessLogCount(list);
+	}
 }

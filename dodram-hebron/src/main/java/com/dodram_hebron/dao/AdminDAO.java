@@ -18,4 +18,5 @@ public interface AdminDAO {
 	public List<UpdateReportVO> selectUpdateReport();
 	public int updateCountCompanyAccessLog(Map<String, Object> list);
 	public int insertCompanyAccessLog(Map<String, Object> list);
+	public int selectAccessLogCount(Map<String, Object> list);
 }
