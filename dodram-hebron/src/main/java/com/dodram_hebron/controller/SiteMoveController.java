@@ -237,7 +237,9 @@ public class SiteMoveController {
 	}
 	
 	/*
-	 * 관리자 페이지 
+	 * 관리자 페이지 도드람, 헤브론 금일 접속 인원 표시
+	 * Date : 2018-12-09
+	 * Author : 엄지용
 	 */ 
 	@RequestMapping(value = "/myOffice")
 	public String admin_index(HttpSession session,
@@ -248,6 +250,21 @@ public class SiteMoveController {
 			return "/myOffice/login/index";
 		} else {
 			model.addAttribute("updateReportList", service.updateReportList());
+			try{ 
+				HashMap<String, Object> dodram = new HashMap<String,Object>();
+				dodram.put("type", "1");
+				model.addAttribute("dodramCount", service.selectAccessLogCount(dodram));
+			}catch(Exception e){ // 접속한 인원이 없으면 0으로 처리 
+				model.addAttribute("dodramCount", "0");
+			}
+			
+			try{
+				HashMap<String, Object> hebron = new HashMap<String,Object>();
+				hebron.put("type", "2");
+				model.addAttribute("hebronCount", service.selectAccessLogCount(hebron));
+			}catch(Exception e){ // 접속한 인원이 없으면 0으로 처리 
+				model.addAttribute("hebronCount", "0");
+			}
 			return "/myOffice/index";
 		}
 	}

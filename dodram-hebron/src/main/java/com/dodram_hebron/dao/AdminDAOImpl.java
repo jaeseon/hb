@@ -64,5 +64,10 @@ public class AdminDAOImpl implements AdminDAO {
 	public int insertCompanyAccessLog(Map<String, Object> list) {
 		return sqlSession.insert(Namespace + ".insertCompanyAccessLog", list);
 	}
+
+	@Override
+	public int selectAccessLogCount(Map<String, Object> list) {
+		return sqlSession.selectOne(Namespace + ".selectAccessLogCount",list);
+	}
 }
 

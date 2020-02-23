@@ -28,6 +28,12 @@
 		ORDER BY no DESC
 	</select>
 	
+	<select id="selectAccessLogCount" resultType="Integer" parameterType="java.util.Map">
+		SELECT count
+		FROM access_log
+		WHERE date = curdate() and type = #{type}
+	</select>
+	
 	<insert id="insertContactBoard" parameterType="java.util.Map">
 		INSERT INTO 
 			Contact_board(User_Name, User_Email, User_Tel, User_Title, User_Ques, Mail_YN, Type) 
@@ -38,14 +44,17 @@
 		INSERT INTO	access_log(type, date, count, register_date)
 		VALUES (#{companyType}, #{date}, 1, now())
 	</insert>
+	
 	<update id="updateEditorBoard" parameterType="java.util.Map">
 		UPDATE editor_board
 		SET content = #{content}
 		WHERE title = #{title}
 	</update>
+	
 	<update id="deleteContract" parameterType="java.util.Map">
 		UPDATE Contact_board SET Delete_YN = 1, Delete_User = #{userId}, Delete_Date = now() WHERE Contact_PKID = #{no}
 	</update>
+	
 	<update id="updateCountCompanyAccessLog" parameterType="java.util.Map">
 		UPDATE access_log 
 		SET count = count+1

@@ -42,9 +42,9 @@
 			<div class="big-box-title">금일 방문자 통계</div>
 				<div class="small-box-contents">
 				<div class="contents-items">
-					도드람 접속 인원 :
-					<br />헤브론테크 접속 인원 : 
-					<br/>인기 페이지 : 
+					금일 도드람 접속 인원 : ${ dodramCount }
+					<br /> 금일 헤브론테크 접속 인원 :  ${ hebronCount } 
+<!-- 					<br/>인기 페이지 :  -->
 				</div>
 			</div>
 		</div>

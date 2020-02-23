@@ -17,4 +17,5 @@ public interface AdminService {
 	public List<UpdateReportVO> updateReportList();
 	public int updateCountCompanyAccessLog(Map<String, Object> list);
 	public int insertCompanyAccessLog(Map<String, Object> list);
+	public int selectAccessLogCount(Map<String, Object> list);
 }
