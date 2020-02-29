@@ -54,6 +54,25 @@ body {
   border-radius: 10px;
   content: "";
 }
+.inner-container > li {
+	position: relative;
+	height: 233.33px;
+}
+.inner-container > li img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 9999;
+	transition: .35s
+}
+.inner-container > li img:hover {
+	z-index: 10000;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+}
 .youtubeWrap {
   position: relative;
   width: 90%;
@@ -151,7 +170,7 @@ body {
 	min-height: 300px;
 	vertical-align: top;
 	font-size: 16px;
-	background: url("/resources/src/images/bg-company-intro.jpg") 85% -10% no-repeat;
+	background: url("/resources/src/images/bg-company-intro.jpg") 85% -20px no-repeat;
 }
 .intro-text {
 	padding: 50px 0 0 80px;
@@ -184,7 +203,7 @@ body {
 }
 .intro-company-introduce2 > p:NTH-CHILD(2) {
 	padding: 20px 0;
-} 
+}
 .intro-company-introduce2 b {
 	font-weight: 600;
 	color: #3386B2;
@@ -194,7 +213,6 @@ body {
 }
 .intro-company-introduce2 img {
 	width: 100%;
-	border: 1px solid #3386B2;
 }
 .organi-container {
 	display: inline-block;
@@ -202,7 +220,7 @@ body {
 	min-height: 300px;
 	vertical-align: top;
 	font-size: 16px;
-	background: url("/resources/src/images/bg-organization.jpg") 85% -3% no-repeat;
+	background: url("/resources/src/images/bg-organization.jpg") 85% -20px no-repeat;
 }
 .organization-chart-container {
 	width: 100%;
@@ -272,7 +290,7 @@ body {
 	min-height: 300px;
 	vertical-align: top;
 	font-size: 16px;
-	background: url("/resources/src/images/bg-metal-process.jpg") 85% -10% no-repeat;
+	background: url("/resources/src/images/bg-metal-process.jpg") 85% -20px no-repeat;
 }
 .product-container {
 	display: inline-block;
@@ -280,7 +298,7 @@ body {
 	min-height: 300px;
 	vertical-align: top;
 	font-size: 16px;
-	background: url("/resources/src/images/bg-product.jpg") 85% -1% no-repeat;
+	background: url("/resources/src/images/bg-product.jpg") 85% -20px no-repeat;
 }
 .sub-title {
 	font-size: 24px;
@@ -298,7 +316,6 @@ body {
 .production-container img {
 	width: 100%;
 	height: 300px;
-	border: 1px solid #000;
 	box-sizing: border-box;
 	border-radius: 0;
 }
@@ -320,7 +337,7 @@ body {
 	content: "절곡기 RG-25, AMADA";
 }
 .production-container:NTH-CHILD(2) > div:NTH-CHILD(2):BEFORE {
-	content: "절곡기 APL11025, AIZAWA";
+	content: "절곡기 180t 3m, 일우";
 }
 .production-container:NTH-CHILD(3) > div:NTH-CHILD(1):BEFORE {
 	content: "샤링기 A3-525, AIZAWA";
@@ -332,7 +349,7 @@ body {
 	content: "코너 샤링기";
 }
 .production-container:NTH-CHILD(4) > div:NTH-CHILD(2):BEFORE {
-	content: "밀링 2호기, 남선";
+	content: "펨프레스";
 }
 .production-container:NTH-CHILD(5) > div:NTH-CHILD(1):BEFORE {
 	content: "PIPE 절단기";
@@ -352,7 +369,7 @@ body {
 	min-height: 300px;
 	vertical-align: top;
 	font-size: 16px;
-	background: url("/resources/src/images/bg-hardware.jpg") 85% -4% no-repeat;
+	background: url("/resources/src/images/bg-hardware.jpg") 85% -20px no-repeat;
 }
 .table-wrap {
 	text-align: center;
@@ -381,7 +398,7 @@ body {
 	min-height: 300px;
 	vertical-align: top;
 	font-size: 16px;
-	background: url("/resources/src/images/bg-contact.jpg") 85% -7% no-repeat;
+	background: url("/resources/src/images/bg-contact.jpg") 85% -20px no-repeat;
 }
 .question-form-container {
 	width: 500px;
