@@ -14,9 +14,15 @@
 		</div>
 		
 		<div class="vidio-wrap">
-			<div class="youtubeWrap">
-				<iframe src="https://www.youtube.com/embed/3wK81sJhpdc?autohide=1&amp;controls=1&amp;showinfo=0&amp;modestbranding=1&amp;rel=0"></iframe>
+			<div class="youtubeWrap">				
+				<iframe src="https://www.youtube.com/embed/SZ3lnejkK3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
+		<div class="vidio-wrap">
+			<div class="youtubeWrap">				
+				<iframe src="https://www.youtube.com/embed/O-yfGZOXXgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		
 	</div>
 </div>

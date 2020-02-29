@@ -15,14 +15,15 @@
 		
 		<div class="vidio-wrap">
 			<div class="youtubeWrap">
-				<iframe src="https://www.youtube.com/embed/gKwbGuMQiF8?autohide=1&amp;controls=1&amp;showinfo=0&amp;modestbranding=1&amp;rel=0"></iframe>
+				<iframe src="https://www.youtube.com/embed/fv6JyrQmvEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
-		
+		<!-- 
 		<div class="vidio-wrap">
 			<div class="youtubeWrap">
 				<iframe src="https://www.youtube.com/embed/zwcoIRiMSWI?autohide=1&amp;controls=1&amp;showinfo=0&amp;modestbranding=1&amp;rel=0"></iframe>
 			</div>
 		</div>
+		 -->
 	</div>
 </div>
