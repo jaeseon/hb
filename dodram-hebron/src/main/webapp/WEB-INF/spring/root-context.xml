@@ -24,8 +24,8 @@
 		<property name="url"
 			value="jdbc:log4jdbc:mysql://localhost:3306/dodrambio?useSSL=false&amp;serverTimezone=UTC">
 		</property>
-		<property name="username" value="dodrambio"></property>
-		<property name="password" value="bPM4b13K8sQl"></property>
+		<property name="username" value=""></property>
+		<property name="password" value=""></property>
 	</bean>
 	
 	<!-- myBatis SqlSessionFactoryBean -->
