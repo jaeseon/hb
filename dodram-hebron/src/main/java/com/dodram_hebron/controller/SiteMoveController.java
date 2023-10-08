@@ -131,6 +131,12 @@ public class SiteMoveController {
 		companyAccessLog(request, response, "dodram");
 		return "/dodram/product/water";
 	}
+	@RequestMapping(value = "/dodram/a_product")
+	public String dodram_seizeTop(HttpServletRequest request, HttpServletResponse response) {
+		companyAccessLog(request, response, "dodram");
+		return "/dodram/product/seizetop";
+	}	
+	
 	@RequestMapping(value = "/dodram/t_product")
 	public String dodram_fertilization(HttpServletRequest request, HttpServletResponse response) {
 		companyAccessLog(request, response, "dodram");

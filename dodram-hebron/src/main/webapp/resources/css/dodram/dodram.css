@@ -17,7 +17,7 @@ body {
 	min-width: 1170px;
 	background-image: url("/resources/src/images/img-background.png");
 	background-size: cover;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 }
 .article {
 	width: 1100px;
@@ -335,7 +335,7 @@ body {
 	display: inline-block;
 	margin-bottom: 26px;
 	font-size: 24px;
-	font-weight: 400;	
+	font-weight: 400;
 }
 .product:before {
 	position: absolute;
@@ -353,7 +353,7 @@ body {
 	min-height: 300px;
 	vertical-align: top;
 	font-size: 16px;
-	background: url("/resources/src/images/bg-company-intro.jpg") 85% -1% no-repeat;
+	background: url("/resources/src/images/bg-company-intro.jpg") 85% -20px no-repeat;
 }
 .table-wrap {
 	text-align: center;
@@ -512,7 +512,7 @@ body {
 	min-height: 300px;
 	vertical-align: top;
 	font-size: 16px;
-	background: url("/resources/src/images/bg-product.jpg") 85% -1% no-repeat;
+	background: url("/resources/src/images/bg-product.jpg") 85% -20px no-repeat;
 }
 .intro-text {
 	padding: 50px 0 0 80px;
@@ -545,7 +545,7 @@ body {
 }
 .intro-company-introduce2 > p:NTH-CHILD(2) {
 	padding: 20px 0;
-} 
+}
 .intro-company-introduce2 b {
 	font-weight: 600;
 	color: #3386B2;
@@ -576,7 +576,7 @@ body {
 	min-height: 300px;
 	vertical-align: top;
 	font-size: 16px;
-	background: url("/resources/src/images/bg-metal-process.jpg") 85% -10% no-repeat;
+	background: url("/resources/src/images/bg-metal-process.jpg") 85% -20px no-repeat;
 }
 .sub-title {
 	font-size: 24px;
@@ -818,7 +818,7 @@ body {
 	right: 0;
 }
 .flex1:after {
-	content: "LAZER L-3030S, TRUMPF";	
+	content: "LAZER L-3030S, TRUMPF";
 }
 .flex2:after {
 	content: "NCT VIPROS357[ATC], AMADA";
@@ -844,7 +844,7 @@ body {
 	min-height: 300px;
 	vertical-align: top;
 	font-size: 16px;
-	background: url("/resources/src/images/bg-contact.jpg") 85% -7% no-repeat;
+	background: url("/resources/src/images/bg-contact.jpg") 85% -20px no-repeat;
 }
 .question-form-container {
 	width: 500px;
